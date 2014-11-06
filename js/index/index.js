@@ -48,14 +48,6 @@ $(function() {
             });
         });
     loadIndex();
-    $( '#lang_sel_en' ).bind('click' , function(){
-        console.log('en');
-        loadIndex('en');
-    });
-    $( '#lang_sel_ru' ).on('click', function(){
-        console.log('ru');
-        loadIndex('ru');
-    });
 });
 
 function loadAbout() {
