@@ -47,9 +47,15 @@ $(function() {
 
             });
         });
-
-
     loadIndex();
+    $( '#lang_sel_en' ).bind('click' , function(){
+        console.log('en');
+        loadIndex('en');
+    });
+    $( '#lang_sel_ru' ).on('click', function(){
+        console.log('ru');
+        loadIndex('ru');
+    });
 });
 
 function loadAbout() {
@@ -86,20 +92,18 @@ function loadIndex(lg) {
         $.getScript(pathVal, function() {$("#registerForm").validationEngine();});
 
         $( "#index" ).html(new EJS({url: 'tpl/index/index.ejs'}).render());
-        loadAbout();
-        loadNews();
-        loadPodval();
 
-        $(".triggerAbout").click(function(){
-            $(".panelAbout").toggle("fast");
-            $(this).toggleClass("activeAbout");
-            return false;
+        $( '#lang_sel_en' ).bind('click' , function(){
+            console.log('en');
+            loadIndex('en');
         });
-        $(".triggerNews").click(function(){
-            $(".panelNews").toggle("fast");
-            $(this).toggleClass("activeNews");
-            return false;
+        $( '#lang_sel_ru' ).on('click', function(){
+            console.log('ru');
+            loadIndex('ru');
         });
+        //loadAbout();
+        //loadNews();
+        loadPodval();
     });
 
 
@@ -162,5 +166,7 @@ function sendRegForm() {
         socket.emit('regUser', regData );
     }
 }
+
+
 
 
