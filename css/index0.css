@@ -1,0 +1,9 @@
+.loginExist {
+//    background-color: #ffe; /* Цвет фона */
+    color: #ff0000; /* Цвет текста */
+}
+
+.loginNoExist {
+//    background-color: #ffe; /* Цвет фона */
+    color: #00ffff; /* Цвет текста */
+}

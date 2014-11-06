@@ -1,0 +1,217 @@
+.parallax {
+	background-position: center;
+	background-repeat: repeat-y;
+	background-size: cover;
+	height: 920px;
+	position: relative;
+    background-image: url(../img/common/back7.jpg);
+}
+
+#img1 {
+	position: fixed;
+	left: 36vw;
+	top: 35vh;
+	width:  28vw;
+}
+/* Кнопка входа в верхнем правом углу */
+#bt_login {
+    position: fixed;
+    right: 2px;
+    top: 10px;
+}
+
+/* Кнопка регистрации в верхнем правом углу */
+#bt_register {
+    position: fixed;
+    right: 72px;
+    top: 10px;
+}
+
+/* Кнопка выбора русского языка слева внизу */
+#sel_ru {
+    position: fixed;
+    left: 10px;
+    bottom: 70px;
+}
+
+/* Кнопка выбора аглицкого языка слева внизу */
+#sel_en {
+    position: fixed;
+    left: 55px;
+    bottom: 70px;
+}
+
+/* Выдвигающаяся панель Об игре с левой стороны */
+.panelAbout {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    display: none;
+    background: #000000;
+    border:1px solid #111111;
+
+    -moz-border-radius-topright: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -moz-border-radius-bottomright: 20px;
+    -webkit-border-bottom-right-radius: 20px;
+    width: 450px;
+    height: auto;
+    padding: 30px 30px 30px 130px;
+    filter: alpha(opacity=85);
+    opacity: .85;
+}
+
+.panelAbout p{
+    margin: 0 0 15px 0;
+    padding: 0;
+    color: #cccccc;
+}
+
+.panelAbout a, .panel a:visited{
+    margin: 0;
+    padding: 0;
+    color: #9FC54E;
+    text-decoration: none;
+    border-bottom: 1px solid #9FC54E;
+}
+
+.panelAbout a:hover, .panel a:visited:hover{
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid #ffffff;
+}
+
+a.triggerAbout{
+    position: fixed;
+    text-decoration: none;
+    top: 80px; left: 0;
+    font-size: 16px;
+    letter-spacing:-1px;
+    font-family: verdana, helvetica, arial, sans-serif;
+    color:#fff;
+    padding: 20px 40px 20px 15px;
+    font-weight: 700;
+    background:#333333 url(../img/common/plus.png) 85% 55% no-repeat;
+    border:1px solid #444444;
+    -moz-border-radius-topright: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -moz-border-radius-bottomright: 20px;
+    -webkit-border-bottom-right-radius: 20px;
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    display: block;
+}
+
+a.triggerAbout:hover{
+    position: fixed;
+    text-decoration: none;
+    top: 80px; left: 0;
+    font-size: 16px;
+    letter-spacing:-1px;
+    font-family: verdana, helvetica, arial, sans-serif;
+    color:#fff;
+    padding: 20px 40px 20px 20px;
+    font-weight: 700;
+    background:#222222 url(../img/common/plus.png) 85% 55% no-repeat;
+    border:1px solid #444444;
+    -moz-border-radius-topright: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -moz-border-radius-bottomright: 20px;
+    -webkit-border-bottom-right-radius: 20px;
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    display: block;
+}
+
+a.activeAbout.triggerAbout {
+    background:#222222 url(../img/common/minus.png) 85% 55% no-repeat;
+}
+
+/* Выдвигающаяся панель Новости с правой стороны */
+.panelNews {
+    position: fixed;
+    top: 50px;
+    right: 0;
+    display: none;
+    background: #000000;
+    border:1px solid #111111;
+    -moz-border-radius-topleft: 20px;
+    -webkit-border-top-left-radius: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    width: 450px;
+    height: auto;
+    padding: 30px 130px 30px 30px;
+    filter: alpha(opacity=85);
+    opacity: .85;
+}
+
+.panelNews p{
+    margin: 0 0 15px 0;
+    padding: 0;
+    color: #cccccc;
+}
+
+.panelNews a, .panelNews a:visited{
+    margin: 0;
+    padding: 0;
+    color: #9FC54E;
+    text-decoration: none;
+    border-bottom: 1px solid #9FC54E;
+}
+
+.panelNews a:hover, .panelNews a:visited:hover{
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid #ffffff;
+}
+
+a.triggerNews{
+    position: fixed;
+    text-decoration: none;
+    top: 80px; right: 0;
+    font-size: 16px;
+    letter-spacing:-1px;
+    font-family: verdana, helvetica, arial, sans-serif;
+    color:#fff;
+    padding: 20px 15px 20px 40px;
+    font-weight: 700;
+    background:#333333 url(../img/common/plus.png) 15% 55% no-repeat;
+    border:1px solid #444444;
+    -moz-border-radius-topleft: 20px;
+    -webkit-border-top-left-radius: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    display: block;
+}
+
+a.triggerNews:hover{
+    position: fixed;
+    text-decoration: none;
+    top: 80px; right: 0;
+    font-size: 16px;
+    letter-spacing:-1px;
+    font-family: verdana, helvetica, arial, sans-serif;
+    color:#fff;
+    padding: 20px 20px 20px 40px;
+    font-weight: 700;
+    background:#222222 url(../img/common/plus.png) 15% 55% no-repeat;
+    border:1px solid #444444;
+    -moz-border-radius-topleft: 20px;
+    -webkit-border-top-left-radius: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    display: block;
+}
+
+a.activeNews.triggerNews {
+    background:#222222 url(../img/common/minus.png) 15% 55% no-repeat;
+}
