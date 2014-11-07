@@ -1,0 +1,30 @@
+body{
+    font-size:1.125em; /* 18/16 */
+    font-family:  "sans-serif";
+}
+/*статичная кртинка на бекграунде*/
+img.bg {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -999;
+}
+img{max-width:100%;height:auto;}
+/*end back image*/
+
+#fixed {
+    width: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
