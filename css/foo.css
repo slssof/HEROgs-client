@@ -61,3 +61,29 @@ img{max-width:100%;height:auto;}
     text-decoration: underline;
     color: #ff054b;
 }
+#w_center {
+    width: 300px;
+    height: auto;
+    margin: 20% auto;
+    background-color: white;
+    opacity: .8;
+    padding: 20px;
+    text-align: center;
+}
+#w_center input {
+    width: 260px;
+    background-color: white;
+    height: 35px;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 3px 0;
+}
+#w_center button {
+    width: 260px;
+    height: 35px;
+    background-color: #269abc;
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-size: 1.2em;
+}
