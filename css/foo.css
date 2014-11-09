@@ -61,12 +61,17 @@ img{max-width:100%;height:auto;}
     text-decoration: underline;
     color: #ff054b;
 }
+#logo {
+    width: 300px;
+    height: auto;
+    margin: 10% auto 0 auto;
+}
 #w_center {
     width: 300px;
     height: auto;
-    margin: 20% auto;
+    margin: 2% auto;
     background-color: white;
-    opacity: .8;
+    opacity: .7;
     padding: 30px 25px 12px 25px;
     text-align: center;
     border-radius: 10px;
