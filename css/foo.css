@@ -1,8 +1,35 @@
-body{
-    font-size:1.125em; /* 18/16 */
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+body {
+    background-color: #888888;
 }
-/*статичная кртинка на бекграунде*/
+#header {
+    padding: 10px 0 0 0;
+    margin-bottom: 25px;
+    /*background: #de2c3b;*/
+}
+.wrap {
+    margin: auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+.left{
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
+.center {
+    text-align: center;
+}
+.lang {
+    font-size: 12px;
+    color: white;
+}
+.lang a {
+    color: #ffffff;
+}
+.lang a:hover {
+    text-decoration: none;
+}
 img.bg {
     /* Set rules to fill background */
     min-height: 100%;
@@ -18,83 +45,25 @@ img.bg {
     left: 0;
     z-index: -999;
 }
-img{max-width:100%;height:auto;}
-/*end back image*/
-.nav img {
-    opacity: .5;
+#navbar-top {
+    background-color: #ffffff;
+    padding: 15px 20px 15px 20px;
 }
-.nav img:hover {
-    opacity: 1;
+.navigation-toggle {
+    background-color: transparent;
 }
-
-#fixed {
-    width: 100%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    z-index: 99;
+.logo {
+    margin-top: 50px;
 }
-.nav {
-    background-color: white;
-    opacity: 0.8;
-    padding: 5px 10px;
-}
-.lang {
-    position: absolute;
-}
-#wrap {
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    /*background-color: #ff0000;*/
-}
-.top_nav {
-    text-align: center;
-    font-size: 0.9em;
-    color: #111111;
-}
-.top_nav a, #w_center a  {
-    color: #111111;
-    text-decoration: none;
-}
-.top_nav a:hover, #w_center a:hover {
-    text-decoration: underline;
-    color: #ff054b;
-}
-#logo {
+.w {
     width: 300px;
-    height: auto;
-    margin: 10% auto 0 auto;
+    padding: 15px;
+    margin: 25px auto;
+    background-color: #ffffff;
 }
-#w_center {
-    width: 300px;
-    height: auto;
-    margin: 2% auto;
-    background-color: white;
-    opacity: .7;
-    padding: 30px 25px 12px 25px;
-    text-align: center;
-    border-radius: 10px;
-}
-#w_center input {
-    width: 250px;
-    background-color: white;
-    height: 35px;
-    text-align: center;
-    font-size: 1.2em;
-    margin: 3px 0;
-    padding: 5px;
-}
-#w_center button {
-    width: 260px;
-    height: 35px;
-    background-color: #269abc;
-    color: white;
-    font-weight: bold;
-    border: none;
-    font-size: 1.2em;
-}
-#w_center button:hover {
-    background-color: #ff054b;
-    cursor: pointer;
+#footer {
+    margin-top: 4.949999999999999em;
+    padding: 25px 0 80px 0;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.60);
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <title>HEROgs</title>
 
@@ -7,12 +7,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="css/kube.min.css" />
-
+    <link rel="stylesheet" href="css/foo.css"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
     <script src="js/kube.min.js"></script>
 
 </head>
 <body>
-    <h1>Hello, world!</h1>
+<!--<img src="img/back.jpg" alt="" class="bg">-->
+<header id="header">
+<div class="units-row end">
+    <div class="wrap"><div class="lang"><i class="fa fa-refresh"></i> <a href="">РУС</a> | <a href="">ENG</a></div>
+        <div class="unit-100">
+            <div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-top">
+                <span><i class="fa fa-hand-o-left"></i></span>
+            </div>
+            <div id="navbar-top" class="center">
+                <a href="">akljdgklj glka</a> | <a href="">jfgalksjgshjha</a> | <a href="">sdfkjgakljfhklashj</a>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+<!-- ************************************************************ -->
+<div class="wrap center logo">
+<img src="img/logo.png" alt=""/>
+    <div class="w">
+        <form method="post" action="" class="forms">
+            <label>
+                <input type="email" name="user-email" placeholder="Логин" class="width-100" />
+            </label>
+            <label>
+                <input type="password" name="user-password" placeholder="Пароль" class="width-100" />
+            </label>
+            <p>
+                <button class="btn btn-red width-100"><i class="fa fa-lock"></i> Войти</button>
+            </p>
+        </form>
+        <p><button class="btn width-100" id="show-modal"
+                   data-tools="modal" data-width="300" data-blur="true" data-title="Регистрация" data-content="reg.html">
+            <i class="fa fa-list-alt"></i> Регистрация
+        </button></p>
+            <p><button class="btn width-100" id="show-modal"
+                          data-tools="modal" data-width="300"  data-blur="true" data-title="Забыли пароль" data-content="zab.html">
+                <i class="fa fa-stethoscope"></i> Забыли пароль?
+        </button></p>
+    </div>
+</div>
+
+
+<!-- ************************************************************ -->
+<footer id="footer">
+    <div class="wrap">
+        <div class="units-row">
+            <div class="unit-70">
+                <div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-bottom">
+                    <span><i class="fa fa-hand-o-left"></i></span>
+                </div>
+                <div id="navbar-bottom">
+                    fsdfhsdfhdfjhdfjsdfjdfsj
+                </div>
+            </div>
+            <div class="unit-30 right"><p><i class="fa fa-wrench"></i> &copy; HEROgs 2014 <i class="fa fa-angellist"></i> &copy; co[de]sign</p></div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
