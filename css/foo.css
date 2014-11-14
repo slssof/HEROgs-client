@@ -46,7 +46,7 @@
     text-decoration: none;
 }
 #navbar-top {
-    padding: 15px 20px 15px 20px;
+    padding: 10px 20px;
     color: #ffffff;
     background-image: url("../img/bt.png");
 }
@@ -57,17 +57,19 @@
     text-decoration: none;
 }
 .navigation-toggle {
-    background-color: transparent;
     color: #ffffff;
+    background: transparent;
+    background-image: url("../img/bt.png");
 }
 .logo {
     margin-top: 50px;
 }
 .w {
-    width: 300px;
-    padding: 15px;
+    width: 350px;
+    padding: 25px;
     margin: 25px auto;
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
+    background-image: url("../img/bt.png");
 }
 #footer {
     margin-top: 4.949999999999999em;
@@ -75,4 +77,26 @@
     font-size: 12px;
     color: rgba(255, 255, 255, 1);
     text-align: center;
+}
+/*.modal {*/
+    /*font-size: 12px;*/
+    /*color: #222222;*/
+/*}*/
+.date {
+    width: 100px;
+    height: auto;
+    /*background-color: #ffe4e9;*/
+    color: #ff054b;
+    float: left;
+    padding: 10px 5px;
+    text-align: center;
+    margin: 0 15px 15px 0;
+    border-top: 10px solid #ff054b;
+    border-left: 1px solid #ff054b;
+    border-right: 1px solid #ff054b;
+    border-bottom: 1px solid #ff054b;
+}
+.chislo {
+    font-weight: bold;
+    font-size: 210%;
 }
