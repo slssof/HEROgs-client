@@ -1,5 +1,20 @@
-body {
-    background-color: #888888;
+#bg {
+    position:fixed;
+    top:-50%;
+    left:-50%;
+    width:200%;
+    height:200%;
+    z-index: -999;
+}
+#bg img {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    min-width:50%;
+    min-height:50%;
 }
 #header {
     padding: 10px 0 0 0;
@@ -30,27 +45,20 @@ body {
 .lang a:hover {
     text-decoration: none;
 }
-img.bg {
-    /* Set rules to fill background */
-    min-height: 100%;
-    min-width: 1024px;
-
-    /* Set up proportionate scaling */
-    width: 100%;
-    height: auto;
-
-    /* Set up positioning */
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -999;
-}
 #navbar-top {
-    background-color: #ffffff;
     padding: 15px 20px 15px 20px;
+    color: #ffffff;
+    background-image: url("../img/bt.png");
+}
+#navbar-top a {
+    color: #ffffff;
+}
+#navbar-top a:hover {
+    text-decoration: none;
 }
 .navigation-toggle {
     background-color: transparent;
+    color: #ffffff;
 }
 .logo {
     margin-top: 50px;
@@ -65,5 +73,6 @@ img.bg {
     margin-top: 4.949999999999999em;
     padding: 25px 0 80px 0;
     font-size: 12px;
-    color: rgba(255, 255, 255, 0.60);
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
 }
