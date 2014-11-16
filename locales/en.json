@@ -1,5 +1,10 @@
 {
     "О проекте": "About",
     "Новости": "News",
-    "Партнеры" : "Partners"
+    "Партнеры" : "Partners",
+    "Войти" : "Enter",
+    "Регистрация":"Registration",
+    "Забыли пароль":"Forgot password?",
+    "Логин": "Login",
+    "Пароль":"Password"
 }
