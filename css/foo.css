@@ -38,12 +38,21 @@
 .lang {
     font-size: 12px;
     color: white;
+    display: inline;
+    padding: 5px 10px;
+    background-color: #ff054b;
 }
 .lang a {
     color: #ffffff;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 3px;
+
 }
 .lang a:hover {
     text-decoration: none;
+    background-color: #bb0544;
+    padding: 1px 3px;
 }
 #navbar-top {
     padding: 10px 20px;
@@ -54,9 +63,10 @@
 #navbar-top a {
     color: #ffffff;
     font-weight: bolder;
+    text-decoration: none;
 }
 #navbar-top a:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 .navigation-toggle {
     color: #ffffff;
