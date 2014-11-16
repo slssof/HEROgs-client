@@ -49,9 +49,11 @@
     padding: 10px 20px;
     color: #ffffff;
     background-image: url("../img/bt.png");
+    text-transform: uppercase;
 }
 #navbar-top a {
     color: #ffffff;
+    font-weight: bolder;
 }
 #navbar-top a:hover {
     text-decoration: none;
