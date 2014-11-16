@@ -9,72 +9,27 @@
     <link rel="stylesheet" href="css/kube.min.css" />
     <link rel="stylesheet" href="css/foo.css"/>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
-    <script src="js/kube.min.js"></script>
 
 </head>
 <body>
-
-<div id="bg">
-    <img src="img/back.jpg" alt="">
-</div>
+    <div id="bg">
+        <img src="img/back.jpg" alt="">
+    </div>
 <!--<img src="img/back.jpg" alt="" class="bg">-->
-<header id="header">
-<div class="units-row end">
-    <div class="wrap"><div class="lang"><i class="fa fa-refresh"></i> <a href="">РУС</a> | <a href="">ENG</a></div>
-        <div class="unit-centered unit-40">
-            <div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-top">
-                <span><i class="fa fa-hand-o-left"></i></span>
-            </div>
-            <div id="navbar-top" class="center">
-                <a href="#" data-tools="modal" data-width="700" data-blur="true" data-title="О проекте" data-content="about.html">О проекте</a> | <a href="#" data-tools="modal" data-width="700" data-blur="true" data-title="Новости" data-content="news.html">Новости</a> | <a href="#" data-tools="modal" data-width="700" data-blur="true" data-title="Партнеры" data-content="partner.html">Партнеры</a>
-            </div>
-        </div>
-    </div>
-</div>
-</header>
-<!-- ************************************************************ -->
-<div class="wrap center logo">
-<img src="img/logo.png" alt=""/>
-    <div class="w">
-        <form method="post" action="" class="forms">
-            <label>
-                <input type="text" name="login" placeholder="Логин" class="width-100" />
-            </label>
-            <label>
-                <input type="password" name="password" placeholder="Пароль" class="width-100" />
-            </label>
-            <p>
-                <button class="btn btn-red width-100"><i class="fa fa-lock"></i> Войти</button>
-            </p>
-        </form>
-        <p><button class="btn width-100" id="show-modal"
-                   data-tools="modal" data-width="600" data-blur="true" data-title="Регистрация нового пользователя" data-content="reg.html">
-            <i class="fa fa-list-alt"></i> Регистрация
-        </button></p>
-            <p><button class="btn width-100" id="show-modal"
-                          data-tools="modal" data-width="600"  data-blur="true" data-title="Забыли пароль?" data-content="zab.html">
-                <i class="fa fa-stethoscope"></i> Забыли пароль?
-        </button></p>
-    </div>
-</div>
+    <div id ="index"></div>
 
+<!-- Гуглы рекомендуют переносить загрузку скриптов в самый низ страницы, перед закрывающим боди -->
 
-<!-- ************************************************************ -->
-<footer id="footer">
-    <div class="wrap">
-        <div class="units-row">
-            <div class="unit-100">
-                <!--<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-bottom">-->
-                    <!--<span><i class="fa fa-hand-o-left"></i></span>-->
-                <!--</div>-->
-                <!--<div id="navbar-bottom">-->
-                    <!--fsdfhsdfhdfjhdfjsdfjdfsj-->
-                <!--</div>-->
-                <p><i class="fa fa-wrench"></i> &copy; HEROgs 2014 <i class="fa fa-angellist"></i> &copy; co[de]sign</p>
-            </div>
-        </div>
-    </div>
-</footer>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+<script src="js/kube.min.js"></script>
+<script src="js/ejs.js"></script>
+<script src="js/hgs_func.js"></script>
+<script src="js/jquery.validationEngine.js"></script>
+<script src="js/jquery.validationEngine-ru.js"></script>
+<script src="js/validator.min.js"></script>
+<script src="js/jsencrypt.min.js"></script>
+<script src="js/index/index.js"></script>
+<script src="https://cdn.socket.io/socket.io-1.0.6.js"></script>
+
 </body>
 </html>

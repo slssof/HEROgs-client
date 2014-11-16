@@ -1,0 +1,60 @@
+
+<header id="header">
+    <div class="units-row end">
+        <div class="wrap"><div class="lang"><i class="fa fa-refresh"></i> <a id = "lang_sel_ru" href="">РУС</a> | <a id = "lang_sel_en" href="">ENG</a></div>
+            <div class="unit-centered unit-40">
+                <div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-top">
+                    <span><i class="fa fa-hand-o-left"></i></span>
+                </div>
+                <div id="navbar-top" class="center">
+                    <a href="#" data-tools="modal" data-width="700" data-blur="true" data-title=<%= lang["О проекте"] %> data-content="about.html"><%= lang["О проекте"] %></a> |
+                    <a href="#" data-tools="modal" data-width="700" data-blur="true" data-title=<%= lang["Новости"] %> data-content="news.html"><%= lang["Новости"] %></a> |
+                    <a href="#" data-tools="modal" data-width="700" data-blur="true" data-title=<%= lang["Партнеры"] %> data-content="partner.html"><%= lang["Партнеры"] %></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ************************************************************ -->
+<div class="wrap center logo">
+    <img src="img/logo.png" alt=""/>
+    <div class="w">
+        <form method="post" action="" class="forms">
+            <label>
+                <input type="text" name="login" placeholder="Логин" class="width-100" />
+            </label>
+            <label>
+                <input type="password" name="password" placeholder="Пароль" class="width-100" />
+            </label>
+            <p>
+                <button class="btn btn-red width-100"><i class="fa fa-lock"></i> Войти</button>
+            </p>
+        </form>
+        <p><button class="btn width-100" id="show-modal"
+                   data-tools="modal" data-width="600" data-blur="true" data-title="Регистрация нового пользователя" data-content="reg.html">
+                <i class="fa fa-list-alt"></i> Регистрация
+            </button></p>
+        <p><button class="btn width-100" id="show-modal"
+                   data-tools="modal" data-width="600"  data-blur="true" data-title="Забыли пароль?" data-content="zab.html">
+                <i class="fa fa-stethoscope"></i> Забыли пароль?
+            </button></p>
+    </div>
+</div>
+
+
+<!-- ************************************************************ -->
+<footer id="footer">
+    <div class="wrap">
+        <div class="units-row">
+            <div class="unit-100">
+                <!--<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-bottom">-->
+                <!--<span><i class="fa fa-hand-o-left"></i></span>-->
+                <!--</div>-->
+                <!--<div id="navbar-bottom">-->
+                <!--fsdfhsdfhdfjhdfjsdfjdfsj-->
+                <!--</div>-->
+                <p><i class="fa fa-wrench"></i> &copy; HEROgs 2014 <i class="fa fa-angellist"></i> &copy; co[de]sign</p>
+            </div>
+        </div>
+    </div>
+</footer>
