@@ -6,5 +6,7 @@
     "Регистрация" : "Registration",
     "Забыли пароль" : "Forgot password?",
     "Логин" : "Login",
-    "Пароль" : "Password"
+    "Пароль" : "Password",
+    "РУС" : "RUS",
+    "АНГ" : "ENG"
 }
