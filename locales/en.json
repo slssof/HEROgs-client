@@ -3,8 +3,8 @@
     "Новости": "News",
     "Партнеры" : "Partners",
     "Войти" : "Enter",
-    "Регистрация":"Registration",
-    "Забыли пароль":"Forgot password?",
-    "Логин": "Login",
-    "Пароль":"Password"
+    "Регистрация" : "Registration",
+    "Забыли пароль" : "Forgot password?",
+    "Логин" : "Login",
+    "Пароль" : "Password"
 }
