@@ -38,9 +38,13 @@ body {
     font-size: 12px;
     color: white;
     display: inline;
-    padding: 5px 10px;
+    padding: 0 10px;
     background-color: #be0010;
-    margin: 0;
+    margin: 8px 0 0 8px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
 }
 .lang a {
     color: #ffffff;
@@ -60,11 +64,12 @@ body {
     padding: 0;
 }
 .top-nav {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     background-image: url("../img/bt.png");
     text-align: center;
     text-transform: uppercase;
+    padding: 8px 10px;
 }
 .top-nav-cont {
     /*padding: 10px;*/
@@ -82,7 +87,7 @@ body {
 }
 #mask {
     position: fixed;
-    z-index:100;
+    z-index:998;
     top: 0px;
     left: 0px;
     height:100%;
@@ -94,12 +99,8 @@ body {
     -webkit-opacity: .1;
     -moz-opacity: .1;
     filter: alpha(opacity=10);
-}
-.wrap_mod {
-    width: 550px;
-    margin: 100px auto;
-    padding: 0;
-    z-index: 9999;
+    background-image: url("../img/bt.png");
+    text-align: center;
 }
 .window {
     position:absolute;
@@ -108,19 +109,21 @@ body {
     width:550px;
     height:auto;
     display:none;
-    z-index:9999;
-    /*padding:0 0 20px 0;*/
+    z-index:999;
+    margin: 200px auto;
     background-color: #ffffff;
-    padding: 20px 30px 24px 30px;
+    padding: 0 0 15px 0;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
     -moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
     -webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
     -box-shadow: 0 0 10px rgba(0,0,0,.4);
-    text-align: center;
 }
-
+.forms {
+    margin: 0;
+    padding: 0;
+}
 .m_close {
  /*border-bottom: 1px solid #e0e3e5;*/
     text-align: right;
@@ -132,7 +135,8 @@ body {
     text-decoration: none;
 }
 .m_content {
-    padding: 5px 25px;
+    padding: 5px 20px;
+    text-align: center;
 }
 .logo {
     margin-top: 50px;
@@ -144,6 +148,7 @@ body {
     margin: 25px auto;
     /*background-color: #ffffff;*/
     background-image: url("../img/bt.png");
+    border-radius: 5px;
 }
 .btn {
     border-radius: 5px;
@@ -171,9 +176,13 @@ body {
     width: 30%;
 }
 input   {
-    padding: 10px 1px;
+    padding: 10px 0;
     font-size: 110%;
     text-align: center;
+    margin: 3px 0;
+    border: none;
+    background-color: #d7edfc;
+    border-radius: 5px;
 }
 #footer {
     margin-top: 4.949999999999999em;
