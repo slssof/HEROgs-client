@@ -121,15 +121,35 @@ body {
     text-align: center;
 }
 .w {
-    width: auto;
+    width: 350px;
     padding: 25px;
-    margin: 25px 20%;
+    margin: 25px auto;
     /*background-color: #ffffff;*/
     background-image: url("../img/bt.png");
 }
 .btn {
-
-
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 110%;
+}
+.btn-red {
+    background-color: #ff054b;
+}
+.btn:hover, .btn:focus {
+    background-color: #ff054b;
+    cursor: pointer;
+    color: #ffffff;
+}
+.width-100 {
+    width: 100%;
+}
+input   {
+    padding: 10px 1px;
+    font-size: 110%;
+    text-align: center;
 }
 #footer {
     margin-top: 4.949999999999999em;
