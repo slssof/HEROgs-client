@@ -9,24 +9,24 @@ function modal(id_mod) {
 
         //$('#mask').css({'width': maskWidth, 'height': maskHeight});
         //$('#bg').addClass('blur');
-        $('#mask').fadeIn(500);
-        $('#mask').fadeTo("slow", 0.8);
+        //$('#mask').fadeIn(500);
+        $('#overlay').fadeTo("slow", 0.8);
+        //$('.wrap_m').show();
 
         //var winH = $(window).height();
         //var winW = $(window).width();
         //$(id).css('top', winH / 2 - $(id).height() / 2);
         //$(id).css('left', winW / 2 - $(id).width() / 2);
-
         $(id).fadeIn(1000);
 
 
     $('.close').click(function (e) {
         //e.preventDefault();
         //$('#bg').removeClass('blur');
-        $('#mask, .window').fadeOut(500);
+        $('#overlay, .window').fadeOut(500);
     });
 
-    $('#mask').click(function () {
+    $('#overlay').click(function () {
         //$('#bg').removeClass('blur');
         $(this).fadeOut(500);
         $('.window').fadeOut(500);
