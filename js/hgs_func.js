@@ -2,6 +2,11 @@
 function Decode(tex, mask) {return tex};
 function Encode(tex, mask) {return tex}; */
 
+function _lng(key) {
+    if(lang[key]) return lang[key];
+    return key;
+}
+
 function Decode(tex, mask) {
 	var fri = new String("");
 	var Stri = new String("");
