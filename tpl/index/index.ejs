@@ -77,8 +77,7 @@
             <label>
                 <input type="email" name="email" placeholder="<%= lang["Мыло"] %>" class="width-50" />
             </label>
-            <button class="btn close"><i class="fa fa-times-circle"></i> <%= lang["Отмена"] %></button>
-            <button class="btn btn-red" onclick=""><i class="fa fa-reply"></i> <%= lang["Готово"] %></button>
+            <button class="btn btn-red" onclick=""><i class="fa fa-reply"></i> <%= lang["Готово"] %></button> <button class="btn close"><i class="fa fa-times-circle"></i> <%= lang["Отмена"] %></button>
         </form>
     </div>
 
@@ -87,8 +86,24 @@
     <div class="m_close"><a href="#" class="close"><i class="fa fa-times-circle"></i></a></div>
     <div class="m_content">
         <h2><%= lang["Регистрация"] %></h2>
-        <p>Те, кому когда-либо приходилось делать в квартире ремонт, наверное, обращали внимание на старые газеты, наклеенные под обоями. Как правило, пока все статьи не перечитаешь, ничего другого делать не можешь. Интересно же — обрывки текста, чья-то жизнь... Так же и с рыбой. Пока заказчик не прочтет всё, он не успокоится. Бывали случаи, когда дизайн принимался именно из-за рыбного текста, который, разумеется, никакого отношения к работе не имел.</p>
-        <p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира. Сомнение раскладывает на элементы неоднозначный структурализм. Смысл жизни профанирует принцип восприятия, отрицая очевидное. Жизнь философски ассоциирует напряженный постмодернизм. Объект деятельности означает конфликт. Согласно предыдущему, конфликт, в рамках сегодняшних воззрений, ясен не всем.</p>
+        <form method="post" action="" class="forms">
+            <label>
+                <input type="text" name="login" placeholder="Логин" class="width-50" />
+            </label>
+            <label>
+                <input type="password" name="password" placeholder="Пароль" class="width-50" />
+            </label>
+            <label>
+                <input type="password" name="password2" placeholder="Пароль еще раз" class="width-50" />
+            </label>
+            <label>
+                <input type="email" name="email" placeholder="Электронная почта" class="width-50" />
+            </label>
+            <label>
+                <input type="email" name="email2" placeholder="Электронная почта еще раз" class="width-50" />
+            </label>
+            <button class="btn btn-red width-50"><i class="fa fa-reply"></i> <%= lang["Готово"] %></button><br/><button class="btn width-50 close"><i class="fa fa-times"></i> <%= lang["Отмена"] %></button>
+        </form>
     </div>
 
 </div>

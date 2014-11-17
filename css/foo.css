@@ -39,7 +39,7 @@ body {
     color: white;
     display: inline;
     padding: 5px 10px;
-    background-color: #ff054b;
+    background-color: #be0010;
     margin: 0;
 }
 .lang a {
@@ -51,7 +51,7 @@ body {
 }
 .lang a:hover {
     text-decoration: none;
-    background-color: #bb0544;
+    background-color: #810010;
     padding: 1px 3px;
 }
 .wrap {
@@ -64,7 +64,7 @@ body {
     margin: 0 auto;
     background-image: url("../img/bt.png");
     text-align: center;
-    /*padding: 0;*/
+    text-transform: uppercase;
 }
 .top-nav-cont {
     /*padding: 10px;*/
@@ -77,7 +77,7 @@ body {
     padding: 3px 10px;
 }
 .top-nav-cont a:hover {
-    background-color: #ff054b;
+    background-color: #be0010;
     padding: 3px 10px;
 }
 #mask {
@@ -131,15 +131,18 @@ body {
     border-radius: 5px;
     padding: 10px;
     border: none;
-    background-color: #ffffff;
+    background-color: #e3e4e4;
     text-align: center;
     font-size: 110%;
 }
 .btn-red {
-    background-color: #ff054b;
+    background-color: #be0010;
 }
+/*.btn:hover {*/
+    /*background-color: #810010;*/
+/*}*/
 .btn:hover, .btn:focus {
-    background-color: #ff054b;
+    background-color: #810010;
     cursor: pointer;
     color: #ffffff;
 }
@@ -172,15 +175,15 @@ input   {
     width: 80px;
     height: auto;
     /*background-color: #ffe4e9;*/
-    color: #ff054b;
+    color: #be0010;
     float: left;
     padding: 10px 5px;
     text-align: center;
     margin: 0 15px 15px 0;
-    border-top: 10px solid #ff054b;
-    border-left: 1px solid #ff054b;
-    border-right: 1px solid #ff054b;
-    border-bottom: 1px solid #ff054b;
+    border-top: 10px solid #be0010;
+    border-left: 1px solid #be0010;
+    border-right: 1px solid #be0010;
+    border-bottom: 1px solid #be0010;
 }
 .chislo {
     font-weight: bold;
