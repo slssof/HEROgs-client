@@ -8,5 +8,9 @@
     "Логин" : "Login",
     "Пароль" : "Password",
     "РУС" : "RUS",
-    "АНГ" : "ENG"
+    "АНГ" : "ENG",
+    "Забыл текст" : "Enter the email address indicated upon registration",
+    "Мыло" : "E-mail",
+    "Готово" : "Ready",
+    "Отмена" : "Сancel"
 }
