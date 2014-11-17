@@ -17,7 +17,7 @@
             <input type="password" name="password" placeholder="<%= lang["Пароль"] %>" class="width-100" />
         </label>
         <p>
-            <button class="btn btn-red width-100" onclick=""><i class="fa fa-lock"></i> <%= lang["Войти"] %></button>
+            <button class="btn btn-red width-100" onclick="alert('входим куда нужно')"><i class="fa fa-lock"></i> <%= lang["Войти"] %></button>
         </p>
     </form>
     <p><button class="btn width-100" onclick="modal('reg')"><i class="fa fa-list-alt"></i> <%= lang["Регистрация"] %>
@@ -77,7 +77,7 @@
             <label>
                 <input type="email" name="email" placeholder="<%= lang["Мыло"] %>" class="width-50" />
             </label>
-            <button class="btn btn-red" onclick=""><i class="fa fa-reply"></i> <%= lang["Готово"] %></button> <button class="btn close"><i class="fa fa-times-circle"></i> <%= lang["Отмена"] %></button>
+            <button class="btn btn-red" onclick="alert('высылаем пароль на мыло')"><i class="fa fa-reply"></i> <%= lang["Готово"] %></button> <button class="btn close"><i class="fa fa-times-circle"></i> <%= lang["Отмена"] %></button>
         </form>
     </div>
 
@@ -88,21 +88,21 @@
         <h2><%= lang["Регистрация"] %></h2>
         <form method="post" action="" class="forms">
             <label>
-                <input type="text" name="login" placeholder="Логин" class="width-50" />
+                <input type="text" name="login" placeholder="<%= lang["Логин"] %>" class="width-50" />
             </label>
             <label>
-                <input type="password" name="password" placeholder="Пароль" class="width-50" />
+                <input type="password" name="password" placeholder="<%= lang["Пароль"] %>" class="width-50" />
             </label>
             <label>
-                <input type="password" name="password2" placeholder="Пароль еще раз" class="width-50" />
+                <input type="password" name="password2" placeholder="<%= lang["Пароль еще"] %>" class="width-50" />
             </label>
             <label>
-                <input type="email" name="email" placeholder="Электронная почта" class="width-50" />
+                <input type="email" name="email" placeholder="<%= lang["Почта"] %>" class="width-50" />
             </label>
             <label>
-                <input type="email" name="email2" placeholder="Электронная почта еще раз" class="width-50" />
+                <input type="email" name="email2" placeholder="<%= lang["Почта еще"] %>" class="width-50" />
             </label>
-            <button class="btn btn-red width-50"><i class="fa fa-reply"></i> <%= lang["Готово"] %></button><br/><button class="btn width-50 close"><i class="fa fa-times"></i> <%= lang["Отмена"] %></button>
+            <button class="btn btn-red width-50" onclick="alert('регистрация обработка')"><i class="fa fa-reply"></i> <%= lang["Готово"] %></button><br/><button class="btn width-50 close"><i class="fa fa-times"></i> <%= lang["Отмена"] %></button>
         </form>
     </div>
 

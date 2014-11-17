@@ -138,9 +138,6 @@ body {
 .btn-red {
     background-color: #be0010;
 }
-/*.btn:hover {*/
-    /*background-color: #810010;*/
-/*}*/
 .btn:hover, .btn:focus {
     background-color: #810010;
     cursor: pointer;

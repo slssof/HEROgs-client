@@ -12,5 +12,8 @@
     "Забыл текст" : "Enter the email address indicated upon registration",
     "Мыло" : "E-mail",
     "Готово" : "Ready",
-    "Отмена" : "Сancel"
+    "Отмена" : "Сancel",
+    "Пароль еще":"Password again",
+    "Почта":"E-mail",
+    "Почта еще":"E-mail again"
 }
