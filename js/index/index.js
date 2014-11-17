@@ -59,22 +59,25 @@ function loadIndex(lg) {
     var path = "locales/" + lng + ".json";
     $.getJSON(path, function (data) {
         lang = data;
-        var pathVal = "js/jquery.validationEngine-" + lng + ".js";
-        $( "#index" ).html(new EJS({url: 'tpl/index/index.ejs'}).render());
+        $( "#index" ).html(new EJS({url: 'tpl/index/index.ejs'}).render()).promise().done(function() {
 
-        $( '#lang_sel_en' ).bind('click' , function(){
-//            console.log('en');
-            loadIndex('en');
-        });
-        $( '#lang_sel_ru' ).on('click', function(){
-//            console.log('ru');
-            loadIndex('ru');
-        });
-        $( '#btnLoginSend' ).on('click', function(){
-            login();
-        });
-        $( '#btnRegSend' ).on('click', function(){
-            sendRegForm();
+            var pathVal = "js/jquery.validationEngine-" + lng + ".js";
+            $.getScript(pathVal, function() {
+                $("#registerForm").validationEngine();
+            });
+
+            $( '#lang_sel_en' ).bind('click' , function(){
+                loadIndex('en');
+            });
+            $( '#lang_sel_ru' ).on('click', function(){
+                loadIndex('ru');
+            });
+            $( '#btnLoginSend' ).on('click', function(){
+                login();
+            });
+            $( '#btnRegSend' ).on('click', function(){
+                sendRegForm();
+            });
         });
 
     });

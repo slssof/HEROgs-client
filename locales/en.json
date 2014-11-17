@@ -6,6 +6,8 @@
     "Регистрация" : "Registration",
     "Забыли пароль" : "Forgot password?",
     "Логин" : "Login",
+    "ЛогинТитл" : "Only 0-9 A-Z a-z А-Я а-я Ёё  !@#$()+point= max 25 chars",
+    "ПарольТитл" :"min 8 - max 25 chars 0-9 A-Z a-z А-Я а-я Ёё  ! @ # $ () + point = _",
     "Пароль" : "Password",
     "РУС" : "RUS",
     "АНГ" : "ENG",
