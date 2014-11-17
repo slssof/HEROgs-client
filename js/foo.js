@@ -10,7 +10,7 @@ function modal(id_mod) {
         //$('#mask').css({'width': maskWidth, 'height': maskHeight});
         //$('#bg').addClass('blur');
         //$('#mask').fadeIn(500);
-        $('#overlay').fadeTo("slow", 0.8);
+        $('#overlay').fadeTo("slow", 0.6);
         //$('.wrap_m').show();
 
         //var winH = $(window).height();
