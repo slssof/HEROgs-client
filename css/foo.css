@@ -92,7 +92,7 @@ body {
     opacity: .1;
 }
 .window {
-    /*position:absolute;*/
+    position:absolute;
     left:0;
     top:0;
     width:70%;
@@ -101,7 +101,7 @@ body {
     z-index:9999;
     /*padding:20px;*/
     background-color: #ffffff;
-    margin: 8% auto;
+    margin: 1% auto;
 }
 .m_close {
  /*border-bottom: 1px solid #e0e3e5;*/
@@ -121,11 +121,15 @@ body {
     text-align: center;
 }
 .w {
-    width: 350px;
+    width: auto;
     padding: 25px;
-    margin: 25px auto;
+    margin: 25px 20%;
     /*background-color: #ffffff;*/
     background-image: url("../img/bt.png");
+}
+.btn {
+
+
 }
 #footer {
     margin-top: 4.949999999999999em;
