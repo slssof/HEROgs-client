@@ -39,9 +39,11 @@ body {
     /*-webkit-filter: blur(2px); *//* Chrome */
 }
 .blur {
-    -webkit-filter: blur(4px);
-    -webkit-transition-property: -webkit-filter;
-    -webkit-transition-duration: .4s;
+    /*-webkit-filter: blur(4px);*/
+    /*-webkit-transition-property: -webkit-filter;*/
+    /*-webkit-transition-duration: .4s;*/
+    filter: url(filter.svg#blur);
+    -webkit-filter: blur(2px);
 }
 .lang {
     font-size: 12px;
@@ -106,8 +108,6 @@ body {
     display: none;
     /*background-image: url("../img/back.jpg");*/
     /*background-size: cover;*/
-    /*filter: url(filter.svg#blur);*/
-    /*-webkit-filter: blur(2px);*/
 }
 .wrap_m {
     width: 550px;
