@@ -60,7 +60,7 @@ function loadIndex(lg) {
     $.getJSON(path, function (data) {
         lang = data;
         var pathVal = "js/jquery.validationEngine-" + lng + ".js";
-        $( "#index" ).html(new EJS({url: 'tpl/index/index_old.ejs'}).render());
+        $( "#index" ).html(new EJS({url: 'tpl/index/index.ejs'}).render());
 
         $( '#lang_sel_en' ).bind('click' , function(){
 //            console.log('en');

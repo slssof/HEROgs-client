@@ -1,61 +1,85 @@
 <div class="lang">
     <a id = "lang_sel_ru" href=""><%= lang["РУС"] %></a>&nbsp;&nbsp;<i class="fa fa-refresh"></i>&nbsp;&nbsp;<a id = "lang_sel_en" href=""><%= lang["АНГ"] %></a>
 </div>
-
-<div class="uk-grid">
-    <div class="uk-width-1-2 uk-container-center uk-text-center"><a href="#"><%= lang["О проекте"] %></a> |
-        <a href="#"><%= lang["Новости"] %></a> |
-        <a href="#"><%= lang["Партнеры"] %></a></div>
-</div>
-
-
-<!-- ************************************************************ -->
-<div class="wrap center logo">
-    <img src="img/logo.png" alt=""/>
-    <div class="w">
-        <form method="post" action="" class="forms">
-            <label>
-                <input type="text" name="login" placeholder="<%= lang["Логин"] %>" class="width-100" />
-            </label>
-            <label>
-                <input type="password" name="password" placeholder="<%= lang["Пароль"] %>" class="width-100" />
-            </label>
-            <p>
-                <button class="btn btn-red width-100"><i class="fa fa-lock"></i> <%= lang["Войти"] %></button>
-            </p>
-        </form>
-        <p><button class="btn width-100" id="show-modal"
-                   data-tools="modal" data-width="600" data-blur="true" data-title="<%= lang["Регистрация"] %>" data-content="reg.html">
-                <i class="fa fa-list-alt"></i> <%= lang["Регистрация"] %>
-            </button></p>
-        <p><button class="btn width-100" id="show-modal"
-                   data-tools="modal" data-width="600"  data-blur="true" data-title="<%= lang["Забыли пароль"] %>" data-content="zab">
-                <i class="fa fa-stethoscope"></i> <%= lang["Забыли пароль"] %>
-            </button></p>
-    </div>
-</div>
-
-<form method="post" action="" class="forms" id="zab">
-    <p>Введите адрес электронной почты указаной при регистрации</p>
-    <label>
-        <input type="email" name="email" placeholder="Электронная почта" class="width-100" />
-    </label>
-
-    <button class="btn modal-close-btn" style="width: 50%;"><i class="fa fa-times"></i> Отмена</button><button class="btn btn-red" style="width: 50%;"><i class="fa fa-reply"></i> Готово</button>
-</form>
-<!-- ************************************************************ -->
-<footer id="footer">
-    <div class="wrap">
-        <div class="units-row">
-            <div class="unit-100">
-                <!--<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-bottom">-->
-                <!--<span><i class="fa fa-hand-o-left"></i></span>-->
-                <!--</div>-->
-                <!--<div id="navbar-bottom">-->
-                <!--fsdfhsdfhdfjhdfjsdfjdfsj-->
-                <!--</div>-->
-                <p><i class="fa fa-wrench"></i> &copy; HEROgs 2014 <i class="fa fa-angellist"></i> &copy; co[de]sign</p>
+<div class="wrap">
+    <div class="top-nav">
+            <div class="top-nav-cont">
+                <a href="#" onclick="modal('about')"><%= lang["О проекте"] %></a> | <a href="#" onclick="modal('news')"><%= lang["Новости"] %></a> | <a href="#" onclick="modal('partners')"><%= lang["Партнеры"] %></a>
             </div>
-        </div>
     </div>
-</footer>
+</div>
+   <!--<img src="img/logo.png" alt=""/>-->
+
+        <!--<form method="post" action="" class="forms">-->
+            <!--<label>-->
+                <!--<input type="text" name="login" placeholder="<%= lang["Логин"] %>" class="width-100" />-->
+            <!--</label>-->
+            <!--<label>-->
+                <!--<input type="password" name="password" placeholder="<%= lang["Пароль"] %>" class="width-100" />-->
+            <!--</label>-->
+            <!--<p>-->
+                <!--<button class="btn btn-red width-100"><i class="fa fa-lock"></i> <%= lang["Войти"] %></button>-->
+            <!--</p>-->
+        <!--</form>-->
+        <!--<p><button class="btn width-100" id="show-modal"-->
+                   <!--data-tools="modal" data-width="600" data-blur="true" data-title="<%= lang["Регистрация"] %>" data-content="reg.html">-->
+                <!--<i class="fa fa-list-alt"></i> <%= lang["Регистрация"] %>-->
+            <!--</button></p>-->
+        <!--<p><button class="btn width-100" id="show-modal"-->
+                   <!--data-tools="modal" data-width="600"  data-blur="true" data-title="<%= lang["Забыли пароль"] %>" data-content="zab">-->
+                <!--<i class="fa fa-stethoscope"></i> <%= lang["Забыли пароль"] %>-->
+            <!--</button></p>-->
+
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+<div id="about" class="window">
+    <div class="m_close"><a href="#" class="close"><i class="fa fa-times-circle"></i></a></div>
+    <div class="m_content">
+        <h2><%= lang["О проекте"] %></h2>
+        <p>Те, кому когда-либо приходилось делать в квартире ремонт, наверное, обращали внимание на старые газеты, наклеенные под обоями. Как правило, пока все статьи не перечитаешь, ничего другого делать не можешь. Интересно же — обрывки текста, чья-то жизнь... Так же и с рыбой. Пока заказчик не прочтет всё, он не успокоится. Бывали случаи, когда дизайн принимался именно из-за рыбного текста, который, разумеется, никакого отношения к работе не имел.</p>
+        <p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира. Сомнение раскладывает на элементы неоднозначный структурализм. Смысл жизни профанирует принцип восприятия, отрицая очевидное. Жизнь философски ассоциирует напряженный постмодернизм. Объект деятельности означает конфликт. Согласно предыдущему, конфликт, в рамках сегодняшних воззрений, ясен не всем.</p>
+    </div>
+
+</div>
+<div id="news" class="window">
+    <div class="m_close"><a href="#" class="close"><i class="fa fa-times-circle"></i></a></div>
+    <div class="m_content">
+        <h2><%= lang["Новости"] %></h2><hr />
+        <div class="date">
+            <span class="chislo">25</span><br/>октября
+        </div>
+        <p>Те, кому когда-либо приходилось делать в квартире ремонт, наверное, обращали внимание на старые газеты, наклеенные под обоями. Как правило, пока все статьи не перечитаешь, ничего другого делать не можешь. Интересно же — обрывки текста, чья-то жизнь... Так же и с рыбой. Пока заказчик не прочтет всё, он не успокоится. Бывали случаи, когда дизайн принимался именно из-за рыбного текста, который, разумеется, никакого отношения к работе не имел.</p>
+        <div class="date">
+            <span class="chislo">29</span><br/>ноября
+        </div>
+        <p>Те, кому когда-либо приходилось делать в квартире ремонт, наверное, обращали внимание на старые газеты, наклеенные под обоями. Как правило, пока все статьи не перечитаешь, ничего другого делать не можешь. Интересно же — обрывки текста, чья-то жизнь... Так же и с рыбой. Пока заказчик не прочтет всё, он не успокоится. Бывали случаи, когда дизайн принимался именно из-за рыбного текста, который, разумеется, никакого отношения к работе не имел.</p>
+        <div class="date">
+            <span class="chislo">1</span><br/>февраля
+        </div>
+        <p>Те, кому когда-либо приходилось делать в квартире ремонт, наверное, обращали внимание на старые газеты, наклеенные под обоями. Как правило, пока все статьи не перечитаешь, ничего другого делать не можешь. Интересно же — обрывки текста, чья-то жизнь... Так же и с рыбой. Пока заказчик не прочтет всё, он не успокоится. Бывали случаи, когда дизайн принимался именно из-за рыбного текста, который, разумеется, никакого отношения к работе не имел.</p>
+    </div>
+
+</div>
+<div id="partners" class="window">
+    <div class="m_close"><a href="#" class="close"><i class="fa fa-times-circle"></i></a></div>
+    <div class="m_content">
+        <h2><%= lang["Партнеры"] %></h2>
+        <p>Те, кому когда-либо приходилось делать в квартире ремонт, наверное, обращали внимание на старые газеты, наклеенные под обоями. Как правило, пока все статьи не перечитаешь, ничего другого делать не можешь. Интересно же — обрывки текста, чья-то жизнь... Так же и с рыбой. Пока заказчик не прочтет всё, он не успокоится. Бывали случаи, когда дизайн принимался именно из-за рыбного текста, который, разумеется, никакого отношения к работе не имел.</p>
+        <p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира. Сомнение раскладывает на элементы неоднозначный структурализм. Смысл жизни профанирует принцип восприятия, отрицая очевидное. Жизнь философски ассоциирует напряженный постмодернизм. Объект деятельности означает конфликт. Согласно предыдущему, конфликт, в рамках сегодняшних воззрений, ясен не всем.</p>
+    </div>
+
+</div>
+<div id="mask"></div>
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+
+<!-- ************************************************************ -->
+
+
+
+<!-- ************************************************************ -->
+<!--<footer id="footer">-->
+
+
+                <!--<p><i class="fa fa-wrench"></i> &copy; HEROgs 2014 <i class="fa fa-angellist"></i> &copy; co[de]sign</p>-->
+
+<!--</footer>-->

@@ -1,3 +1,16 @@
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, Tahoma, sans-serif;
+    font-size: 0.9375em;
+    line-height: 1.65em;
+    background: #ffffff;
+    color: #222222;
+    margin: 0;
+    padding: 0;
+}
 #bg {
     position:fixed;
     top:-50%;
@@ -16,24 +29,10 @@
     min-width:50%;
     min-height:50%;
 }
-#header {
-    padding: 10px 0 0 0;
-    margin-bottom: 25px;
-    /*background: #de2c3b;*/
-}
-.wrap {
-    margin: auto;
-    max-width: 1200px;
-    padding: 0 20px;
-}
-.left{
-    text-align: left;
-}
-.right {
-    text-align: right;
-}
-.center {
-    text-align: center;
+.blur {
+    -webkit-filter: blur(4px);
+    -webkit-transition-property: -webkit-filter;
+    -webkit-transition-duration: .4s;
 }
 .lang {
     font-size: 12px;
@@ -41,6 +40,7 @@
     display: inline;
     padding: 5px 10px;
     background-color: #ff054b;
+    margin: 0;
 }
 .lang a {
     color: #ffffff;
@@ -54,24 +54,67 @@
     background-color: #bb0544;
     padding: 1px 3px;
 }
-#navbar-top {
-    padding: 10px 20px;
-    color: #ffffff;
-    background-image: url("../img/bt.png");
-    text-transform: uppercase;
+.wrap {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
 }
-#navbar-top a {
+.top-nav {
+    width: 50%;
+    margin: 0 auto;
+    background-image: url("../img/bt.png");
+    text-align: center;
+    /*padding: 0;*/
+}
+.top-nav-cont {
+    /*padding: 10px;*/
     color: #ffffff;
+}
+.top-nav-cont a {
+    color: #ffffff;
+    text-decoration: none;
     font-weight: bolder;
+    padding: 3px 10px;
+}
+.top-nav-cont a:hover {
+    background-color: #ff054b;
+    padding: 3px 10px;
+}
+#mask {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+    opacity: .1;
+}
+.window {
+    /*position:absolute;*/
+    left:0;
+    top:0;
+    width:70%;
+    height:auto;
+    display:none;
+    z-index:9999;
+    /*padding:20px;*/
+    background-color: #ffffff;
+    margin: 8% auto;
+}
+.m_close {
+ /*border-bottom: 1px solid #e0e3e5;*/
+    text-align: right;
+    font-size: 120%;
+    padding: 5px 5px;
+}
+.m_close a {
+    color: #b3b4b5;
     text-decoration: none;
 }
-#navbar-top a:hover {
-    text-decoration: underline;
-}
-.navigation-toggle {
-    color: #ffffff;
-    background: transparent;
-    background-image: url("../img/bt.png");
+.m_content {
+    padding: 5px 25px;
 }
 .logo {
     margin-top: 50px;
@@ -95,7 +138,7 @@
     /*color: #222222;*/
 /*}*/
 .date {
-    width: 100px;
+    width: 80px;
     height: auto;
     /*background-color: #ffe4e9;*/
     color: #ff054b;
@@ -110,8 +153,5 @@
 }
 .chislo {
     font-weight: bold;
-    font-size: 210%;
-}
-#zab {
-    display: none;
+    font-size: 180%;
 }
