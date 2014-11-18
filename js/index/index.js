@@ -7,7 +7,7 @@ var decrypt;
 $(function() {
     encrypt = new JSEncrypt();
     decrypt = new JSEncrypt();
-    socket = io.connect('http://localhost:3055');
+    socket = io.connect('http://herogs.ru:5000');
     socket.on('connect', function (data) {
             console.log(socket.io.engine.id);
         //ToDo отображение занятости логина при регистрации
@@ -128,12 +128,12 @@ function sendRegForm() {
 //    regData.birthDay=$("#inputBirthDay").val();
 //    regData.sex=$("#index_sex").val();
 //    regData.lang=$("#index_lang").val();
+    var passMailCheck = 1;
+    if ((regData.password != password2) || (regData.email != eMail2)) { passMailCheck = 0; }
 
     var validate = validator.matches(regData.login, /^[0-9A-Za-zА-Яа-яЁё\s!@#$()+.=]+$/) *
             validator.matches(regData.password, /^[0-9A-Za-zА-Яа-яЁё\s!@#$()+.=_]+$/) *
-            validator.isEmail(regData.email) *
-            validator.matches(regData.realName, /^[0-9A-Za-zА-Яа-яЁё\s]+$/) *
-            validator.isDate(regData.birthDay);
+            validator.isEmail(regData.email) * passMailCheck;
     if (regData.sex == "sexMan") regData.sex = 1;
     if (regData.sex == "sexWoman") regData.sex = 0;
     if (regData.lang == "langRu") regData.lang = 0;
@@ -141,6 +141,10 @@ function sendRegForm() {
 
     if(validate) {
         socket.emit('regUser', regData );
+        return 0;
+    } else {
+        alert ("Не правильно заполнена форма регистрации");
+        //ToDo что-то сделать если форма заполнена не правильно. Соббщение об этом в окно вывести.
     }
 }
 
