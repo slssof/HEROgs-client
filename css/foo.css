@@ -38,12 +38,27 @@ body {
     /*filter: url(filter.svg#blur); *//* FF, IE10 & Opera */
     /*-webkit-filter: blur(2px); *//* Chrome */
 }
-.blur {
-    /*-webkit-filter: blur(4px);*/
+/*.blur {*/
+    /*-webkit-filter: blur(2px);*/
     /*-webkit-transition-property: -webkit-filter;*/
     /*-webkit-transition-duration: .4s;*/
-    filter: url(filter.svg#blur);
-    -webkit-filter: blur(2px);
+    /*filter: url(filter.svg#blur);*/
+    /*-webkit-filter: blur(2px);*/
+/*}*/
+.inv {
+    display: none;
+}
+.err{
+    color: #be0010;
+    font-size: 12px;
+    padding: 3px 5px;
+    text-align: center;
+    background-color: white;
+}
+.note {
+    font-size: 12px;
+    text-align: center;
+    color: #363738;
 }
 .lang {
     font-size: 12px;

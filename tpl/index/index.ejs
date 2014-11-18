@@ -18,8 +18,9 @@
         <label>
             <input type="password" name="password" placeholder="<%= _lng("Пароль") %>" class="width-100" />
         </label>
+            <p class="err inv"><%= _lng("Ошибка входа") %></p>
         <p>
-            <button class="btn btn-red width-100" onclick="alert('входим куда нужно')"><i class="fa fa-lock"></i> <%= _lng("Войти") %></button>
+            <button class="btn btn-red width-100" onclick=""><i class="fa fa-lock"></i> <%= _lng("Войти") %></button>
         </p>
     </form>
     <p><button class="btn width-100" onclick="modal('reg')"><i class="fa fa-list-alt"></i> <%= _lng("Регистрация") %>
@@ -89,7 +90,7 @@
     <div class="m_close"><a href="#" class="close"><i class="fa fa-times-circle"></i></a></div>
     <div class="m_content">
         <h2><%= _lng("Регистрация") %></h2>
-        Написать про то, что по почте в целях безопасности ничего выслано не будет. Запоминайте логин и пароль сами.
+        <p class="note">Написать про то, что по почте в целях безопасности ничего выслано не будет. Запоминайте логин и пароль сами.</p>
         <form method="post" action="" class="forms" id="registerForm">
             <label>
                 <input type="text" name="login" placeholder="<%= _lng("Логин") %>" class="width-100" id="inputLogin"
@@ -112,7 +113,7 @@
             </label>
             <button class="btn btn-red width-100" onclick="alert('регистрация обработка')"><i class="fa fa-reply"></i> <%= _lng("Готово") %></button> <button class="btn width-100 close"><i class="fa fa-times"></i> <%= _lng("Отмена") %></button>
         </form>
-        Разместить ссылку на пользовательское соглашение, и то, что регистрация означает согласие с ним.
+        <p class="note">Разместить ссылку на пользовательское соглашение, и то, что регистрация означает согласие с ним.</p>
     </div>
 </div>
 </div>

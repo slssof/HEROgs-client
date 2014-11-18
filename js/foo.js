@@ -8,9 +8,9 @@ function modal(id_mod) {
         //var maskWidth = $(window).width();
 
         //$('#mask').css({'width': maskWidth, 'height': maskHeight});
-        $('#bg').addClass('blur');
+        //$('#bg').addClass('blur');
         //$('#mask').fadeIn(500);
-        $('#overlay').fadeTo("slow", 0.3);
+        $('#overlay').fadeTo("slow", 0.8);
         //$('.wrap_m').show();
 
         //var winH = $(window).height();
@@ -22,12 +22,12 @@ function modal(id_mod) {
 
     $('.close').click(function (e) {
         //e.preventDefault();
-        $('#bg').removeClass('blur');
+        //$('#bg').removeClass('blur');
         $('#overlay, .window').fadeOut(500);
     });
 
     $('#overlay').click(function () {
-        $('#bg').removeClass('blur');
+        //$('#bg').removeClass('blur');
         $(this).fadeOut(500);
         $('.window').fadeOut(500);
     });

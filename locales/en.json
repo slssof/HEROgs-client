@@ -17,5 +17,6 @@
     "Отмена" : "Сancel",
     "Пароль еще":"Password again",
     "Почта":"E-mail",
-    "Почта еще":"E-mail again"
+    "Почта еще":"E-mail again",
+    "Ошибка входа" : "Wrong username or password. Try again"
 }
