@@ -93,23 +93,30 @@
         <p class="note">Написать про то, что по почте в целях безопасности ничего выслано не будет. Запоминайте логин и пароль сами.</p>
         <form method="post" action="" class="forms" id="registerForm">
             <label>
-                <input type="text" name="login" placeholder="<%= _lng("Логин") %>" class="width-100" id="inputLogin"
+                <input type="text" name="login" placeholder="<%= _lng("Логин") %>" class="width-100"
+                       id="inputLogin"
                        title="<%= _lng("ЛогинТитл") %>"
-                       pattern="^[0-9A-Za-zА-Яа-яЁё\s!@#$()+.=]+$"/>
+                       pattern="^[0-9A-Za-zА-Яа-яЁё\s!@#$()+.=]+$"
+                       onkeyup="checkLoginName();"/>
             </label>
             <label>
-                <input type="password" name="password" placeholder="<%= _lng("Пароль") %>" class="width-100" id="inputPassword3"
+                <input type="password" name="password" placeholder="<%= _lng("Пароль") %>" class="width-100"
+                       id="inputPassword1"
                        title="<%= _lng("ПарольТитл") %>"
                        pattern="^[0-9A-Za-zА-Яа-яЁё\s!@#$()+.=_]+$"  />
             </label>
             <label>
-                <input type="password" name="password2" placeholder="<%= _lng("Пароль еще") %>" class="width-100" />
+                <input type="password" name="password2" placeholder="<%= _lng("Пароль еще") %>" class="width-100"
+                       id="inputPassword2"
             </label>
             <label>
-                <input type="email" name="email" placeholder="<%= _lng("Почта") %>" class="width-100" />
+                <input type="email" name="email" placeholder="<%= _lng("Почта") %>" class="width-100"
+                        id="inputMail1"
+                        title="<%= _lng("ПочтаТитл") %>"
             </label>
             <label>
-                <input type="email" name="email2" placeholder="<%= _lng("Почта еще") %>" class="width-100" />
+                <input type="email" name="email2" placeholder="<%= _lng("Почта еще") %>" class="width-100"
+                        id="inputMail2" />
             </label>
             <button class="btn btn-red width-100" onclick="alert('регистрация обработка')"><i class="fa fa-reply"></i> <%= _lng("Готово") %></button> <button class="btn width-100 close"><i class="fa fa-times"></i> <%= _lng("Отмена") %></button>
         </form>

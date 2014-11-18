@@ -7,14 +7,18 @@ var decrypt;
 $(function() {
     encrypt = new JSEncrypt();
     decrypt = new JSEncrypt();
-    socket = io.connect('http://localhost:3000');
+    socket = io.connect('http://localhost:3055');
     socket.on('connect', function (data) {
-//            console.log(socket.io.engine.id);
+            console.log(socket.io.engine.id);
+        //ToDo отображение занятости логина при регистрации
             socket.on('otvCheckLoginName', function(data) {
                 if (data.exist) {
+                    //ToDo Если логин занят, то цвет букв или чего там сделать цветом ошибки
                     $( "#checkLoginColor" ).removeClass("input-error").addClass("input-success");
                     $( "#btnRegSend" ).addClass("btn-disabled");
+                    alert("занято");
                 } else {
+                    //ToDo Если логин не занят, то цвет букв или чего там сделать цветом нормально
                     $( "#checkLoginColor" ).removeClass("has-error").addClass("has-success");
                     $( "#btnRegSend" ).removeClass("disabled");
                 }
@@ -36,7 +40,7 @@ $(function() {
             });
             socket.on('loginError', function(data) {
 // ToDo сделать нормальный мультиязычный вывод сообщения
-//                alert("Неправильный логин или пароль");
+               alert("Неправильный логин или пароль");
                 $('.inv').show();
             });
 
@@ -116,12 +120,14 @@ function login() {
 function sendRegForm() {
     var regData={};
     regData.login=$("#inputLogin").val();
-    regData.password=$("#inputPassword3").val();
-    regData.email=$("#inputEmail3").val();
-    regData.realName=$("#inputRealName").val();
-    regData.birthDay=$("#inputBirthDay").val();
-    regData.sex=$("#index_sex").val();
-    regData.lang=$("#index_lang").val();
+    regData.password=$("#inputPassword1").val();
+    var password2 = $("#inputPassword2").val();
+    regData.email=$("#inputMail1").val();
+    var eMail2 = $("#inputMail2").val();
+//    regData.realName=$("#inputRealName").val();
+//    regData.birthDay=$("#inputBirthDay").val();
+//    regData.sex=$("#index_sex").val();
+//    regData.lang=$("#index_lang").val();
 
     var validate = validator.matches(regData.login, /^[0-9A-Za-zА-Яа-яЁё\s!@#$()+.=]+$/) *
             validator.matches(regData.password, /^[0-9A-Za-zА-Яа-яЁё\s!@#$()+.=_]+$/) *
