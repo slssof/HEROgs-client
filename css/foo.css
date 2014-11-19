@@ -141,7 +141,6 @@ body {
     margin: 200px auto 0 auto;
     background-color: #ffffff;
     padding: 0 0 15px 0;
-    -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
     /*z-index: 1000;*/
