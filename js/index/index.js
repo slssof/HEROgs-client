@@ -33,7 +33,7 @@ $(function() {
             });
             socket.on('createSession', function(data) {
                 console.log('createSession');
-                $('#modal-container-login').modal('hide');
+//                $('#modal-container-login').modal('hide');
                 sessionStorage.setItem('session', JSON.stringify(data));
                 // sessionStorage.getItem('session');
                 location="http://herogsold.sls/cabinet.html";
@@ -111,6 +111,7 @@ function login() {
     loginData.login = encrypt.encrypt($("#inputLoginEnter").val());
     loginData.password = encrypt.encrypt($("#inputPasswordEnter").val());
     var validate = 1; //validator.matches(loginData.login, /^[0-9A-Za-zА-Яа-яЁё\s!@#$()+.=]+$/) * validator.matches(loginData.password, /^[0-9A-Za-zА-Яа-яЁё\s!@#$()+.=_]+$/);
+    alert("validate login = " + validate);
     if(validate) {
         socket.emit('login', loginData);
     }
