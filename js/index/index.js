@@ -36,7 +36,7 @@ $(function() {
 //                $('#modal-container-login').modal('hide');
                 sessionStorage.setItem('session', JSON.stringify(data));
                 // sessionStorage.getItem('session');
-                location="http://herogsold.sls/cabinet.html";
+                location="http://herogs.ru/cabinet.html";
             });
             socket.on('loginError', function(data) {
 // ToDo сделать нормальный мультиязычный вывод сообщения
