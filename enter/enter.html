@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <title>uiKit Proba</title>
+    <link rel="stylesheet" href="css/uikit.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+    <script src="js/uikit.min.js"></script>
+</head>
+<body>
+
+<div id="my-id" class="uk-modal">
+    <div class="uk-modal-dialog uk-modal-dialog-large">
+        <div class="uk-margin uk-grid" data-uk-grid-margin>
+            <h1>Headline</h1>
+            <div class="uk-width-medium-1-1">
+
+                <ul class="uk-tab" data-uk-tab="{connect:'#content-1, #content-2', animation:'fade'}">
+                    <li class="uk-active"><a href="#">Tab</a></li>
+                    <li><a href="#">Tab</a></li>
+                    <li><a href="#">Tab</a></li>
+                    <li class="uk-disabled"><a href="#">Disabled</a></li>
+                </ul>
+
+                <ul id="content-1" class="uk-switcher uk-margin">
+                    <li>Hello! <a href="#" data-uk-switcher-item="2">Switch to tab 3</a></li>
+                    <li>Hello again! <a href="#" data-uk-switcher-item="next">Next tab</a></li>
+                    <li>Bazinga! <a href="#" data-uk-switcher-item="previous">Previous tab</a></li>
+                    <li>You will never see me!</li>
+                </ul>
+
+                <ul id="content-2" class="uk-switcher uk-margin">
+                    <li>Hello! The second item.</li>
+                    <li>Hello again! The second item.</li>
+                    <li>Bazinga! The second item.</li>
+                    <li>You will never see me!</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
+
+        <script>
+            $(function() {
+                var modal = $.UIkit.modal("#my-id");
+                modal.show();
+            });
+        </script>
