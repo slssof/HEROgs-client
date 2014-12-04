@@ -4,6 +4,7 @@
 
 var encrypt;
 var decrypt;
+var personage = {};
 
 $(function() {
 
@@ -19,7 +20,7 @@ $(function() {
     var modal = $.UIkit.modal("#genpers");
     modal.show();
 
-//    $( "#heroes" ).html(new EJS({url: '/tpl/enter/heroes.ejs'}).render());
+    $( "#dataBox" ).html(new EJS({url: '/tpl/enter/vPol.ejs'}).render());
 
     $('#genpers').on({
         'uk.modal.hide': function(){
@@ -30,4 +31,31 @@ $(function() {
 
 function genpers() {
     location="http://herogs.sls/enter/genpers.html";
+}
+
+function setSex(sex) {
+    alert("setSex");
+    personage.sex = sex;
+    var attr_bRace = $('#bRace').attr('class');
+    var attr_bPol = $('#bPol').attr('class');
+    console.log('race = ' + attr_bRace);
+    console.log('Pol = ' + attr_bPol);
+    $('#bRace').removeAttr('disabled');
+    var tmpStr = attr_bPol.replace("uk-button-primary"," ");
+    tmpStr += ' uk-button-success';
+    $('#bPol').attr('class', tmpStr);
+    tmpStr = attr_bRace + ' uk-button-primary';
+    $('#bRace').attr('class', tmpStr);
+
+
+    // uk-button-success
+    // uk-button-primary
+}
+
+function pressbRace() {
+    $( "#dataBox" ).html(new EJS({url: '/tpl/enter/vRace.ejs'}).render());
+}
+
+function pressbPol() {
+    $( "#dataBox" ).html(new EJS({url: '/tpl/enter/vPol.ejs'}).render());
 }
