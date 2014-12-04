@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>uiKit Proba</title>
     <link rel="stylesheet" href="css/uikit.css" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+    <script src="/js/jquery-2.1.1.min.js"></script>
     <script src="js/uikit.min.js"></script>
     <script src="/js/ejs.js"></script>
     <script src="/js/hgs_func.js"></script>
@@ -12,6 +12,9 @@
     <script src="/js/jsencrypt.min.js"></script>
     <script src="https://cdn.socket.io/socket.io-1.0.6.js"></script>
     <script src="/js/enter/genpers.js"></script>
+    <script src="js/components/slideshow.js"></script>
+    <script src="js/components/slideshow-fx.js"></script>
+    <script src="js/components/cover.js"></script>
 </head>
 <body>
 
@@ -40,6 +43,82 @@
                             </div>
 
                             <div id="dataBox" class="uk-width-medium-7-10">
+
+                                <div id="vPol" class="uk-display-block">
+                                    <div class="uk-grid">
+                                        <div class="uk-width-1-1">
+                                            Как известно, женщины намного осмотрительнее и осторожнее мужчин.
+                                            Зато мужчины значительно сильнее.</br>
+                                            Выбор героя мужского поля дает <b>+1 к силе</b> и <b>-1 к мудрости</b> героя.</br>
+                                            Выбор же героя женского пола дает <b>+1 к мудрости</b> и <b>-1 к силе</b> героя.
+                                            <br>
+                                            <p align="center">Выберите пол героя:</p>
+                                        </div>
+                                    </div>
+                                    <div class="uk-grid">
+                                        <div class="uk-width-1-2" align="center">
+                                            <button class="uk-button uk-button-large" onclick="setSex('man');">Мужчина</button>
+                                        </div>
+                                        <div class="uk-width-1-2" align="center">
+                                            <button class="uk-button uk-button-large" onclick="setSex('woman');">Женщина</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="vRace" class="uk-invisible">
+                                    Выбор расы
+
+                                    <div class="uk-margin" data-uk-slideshow>
+                                        <div class="uk-slidenav-position">
+                                            <ul class="uk-slideshow">
+                                                <li>
+                                                    <img src="http://unsplash.it/1000/500" alt="">
+                                                    <div class="uk-caption uk-caption-panel uk-animation-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
+                                                        <div>
+                                                            <h3>Caption</h3>
+                                                            <p>Lorem <a href="#">ipsum dolor</a> sit amet, consetetur sadipscing elitr,<br>sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                                                            <button class="uk-button uk-button-primary">Button</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <img src="http://unsplash.it/1000/502" alt="">
+                                                    <div class="uk-caption uk-caption-top uk-caption-panel uk-animation-slide-top">
+                                                        <h3>Caption Top</h3>
+                                                        <p>Lorem <a href="#">ipsum dolor</a> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                                                        <button class="uk-button uk-button-primary">Button</button>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <img src="http://unsplash.it/1000/503" alt="">
+                                                    <div class="uk-caption uk-caption-bottom uk-caption-panel uk-animation-slide-bottom">
+                                                        <h3>Caption Bottom</h3>
+                                                        <p>Lorem <a href="#">ipsum dolor</a> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                                                        <button class="uk-button uk-button-primary">Button</button>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <img src="http://unsplash.it/1000/504" alt="">
+                                                    <div class="uk-caption uk-caption-left uk-caption-panel uk-animation-slide-left uk-width-1-4">
+                                                        <h3>Caption Left</h3>
+                                                        <p>Lorem <a href="#">ipsum dolor</a> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                                                        <button class="uk-button uk-button-primary">Button</button>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <img src="http://unsplash.it/1000/505" alt="">
+                                                    <div class="uk-caption uk-caption-right uk-caption-panel uk-animation-slide-right uk-width-1-4">
+                                                        <h3>Caption Right</h3>
+                                                        <p>Lorem <a href="#">ipsum dolor</a> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                                                        <button class="uk-button uk-button-primary">Button</button>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <a href="#" class="uk-slidenav uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+                                            <a href="#" class="uk-slidenav uk-slidenav-next" data-uk-slideshow-item="next"></a>
+                                        </div>
+                                    </div>
+
+                                </div>
 
                             </div>
                         </div>

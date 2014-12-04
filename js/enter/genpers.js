@@ -20,7 +20,7 @@ $(function() {
     var modal = $.UIkit.modal("#genpers");
     modal.show();
 
-    $( "#dataBox" ).html(new EJS({url: '/tpl/enter/vPol.ejs'}).render());
+//    $( "#dataBox" ).html(new EJS({url: '/tpl/enter/vPol.ejs'}).render());
 
     $('#genpers').on({
         'uk.modal.hide': function(){
@@ -53,9 +53,15 @@ function setSex(sex) {
 }
 
 function pressbRace() {
-    $( "#dataBox" ).html(new EJS({url: '/tpl/enter/vRace.ejs'}).render());
+//    $( "#dataBox" ).html(new EJS({url: '/tpl/enter/vRace.ejs'}).render());
+    $('#vPol').removeAttr('class');
+    $('#vPol').attr('class', 'uk-hidden');
+    $('#vRace').removeAttr('class');
+    $('#vRace').attr('class', 'uk-display-block');
+
+
 }
 
 function pressbPol() {
-    $( "#dataBox" ).html(new EJS({url: '/tpl/enter/vPol.ejs'}).render());
+//    $( "#dataBox" ).html(new EJS({url: '/tpl/enter/vPol.ejs'}).render());
 }
