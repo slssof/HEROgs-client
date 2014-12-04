@@ -7,18 +7,19 @@ var decrypt;
 
 $(function() {
 
-    encrypt = new JSEncrypt();
-    decrypt = new JSEncrypt();
+
     var oSession = JSON.parse(sessionStorage.getItem('session'));
     if (oSession == null) location="http://herogs.sls";
+    encrypt = new JSEncrypt();
+    decrypt = new JSEncrypt();
     console.log(oSession);
     encrypt.setPublicKey(oSession.pub);
     decrypt.setPrivateKey(oSession.priv);
 
-    var modal = $.UIkit.modal("#my-id");
+    var modal = $.UIkit.modal("#genpers");
     modal.show();
 
-    $( "#heroes" ).html(new EJS({url: '/tpl/enter/heroes.ejs'}).render());
+//    $( "#heroes" ).html(new EJS({url: '/tpl/enter/heroes.ejs'}).render());
 
     $('#my-id').on({
         'uk.modal.hide': function(){

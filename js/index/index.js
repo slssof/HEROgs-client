@@ -7,7 +7,7 @@ var decrypt;
 $(function() {
     encrypt = new JSEncrypt();
     decrypt = new JSEncrypt();
-    socket = io.connect('http://herogs.ru:5000');
+    socket = io.connect('http://herogs.sls:5000');
     socket.on('connect', function (data) {
             console.log(socket.io.engine.id);
         //ToDo отображение занятости логина при регистрации
@@ -36,7 +36,7 @@ $(function() {
 //                $('#modal-container-login').modal('hide');
                 sessionStorage.setItem('session', JSON.stringify(data));
                 // sessionStorage.getItem('session');
-                location="http://herogs.ru/cabinet.html";
+                location="http://herogs.sls/enter/enter.html";
             });
             socket.on('loginError', function(data) {
 // ToDo сделать нормальный мультиязычный вывод сообщения
