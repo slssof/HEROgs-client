@@ -21,7 +21,7 @@ $(function() {
 
 //    $( "#heroes" ).html(new EJS({url: '/tpl/enter/heroes.ejs'}).render());
 
-    $('#my-id').on({
+    $('#genpers').on({
         'uk.modal.hide': function(){
             modal.show();
         }

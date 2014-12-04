@@ -18,23 +18,83 @@
 <div id="genpers" class="uk-modal" data-uk-modal="{bgclose:false}">
     <div class="uk-modal-dialog">
         <div class="uk-margin uk-grid" data-uk-grid-margin>
-            <h1>Личный кабинет</h1>
+            <h1>Генерация героя</h1>
             <div class="uk-width-medium-1-1">
+                <div class="uk-margin uk-grid" data-uk-grid-margin>
+                    <div class="uk-width-medium-1-1">
+                        <div class="uk-grid" data-uk-grid-margin>
+                            <div class="uk-width-medium-3-10">
 
-                <ul class="uk-tab" data-uk-tab="{connect:'#content-1', animation:'fade'}">
-                    <li class="uk-active"><a href="#">Герои</a></li>
-                    <li><a href="#">Данные</a></li>
-                    <li><a href="#">Финансы</a></li>
-                    <li><a href="#">Рефералы</a></li>
-                </ul>
 
-                <ul id="content-1" class="uk-switcher uk-margin">
-                    <li id="heroes">Ваши герои</li>
-                    <li id="datas">Ваши данные</li>
-                    <li id="money">Финансы</li>
-                    <li id="referals">Рефералы</li>
-                </ul>
 
+<!--                                <ul class="uk-tab uk-tab-left" data-uk-tab="{connect:'#tab-left-content'}">
+                                    <li class="uk-button uk-active"><a href="#">Выбор пола героя</a></li>
+                                    <li><a class="uk-button" href="#">Выбор расы героя</a></li>
+                                    <li><a class="uk-button" href="#">Выбор класса героя</a></li>
+                                    <li><a class="uk-button" href="#">Настройка статов героя</a></li>
+                                    <li><a class="uk-button" href="#">Тонкий тюнинг героя</a></li>
+                                </ul>
+                            </div>
+                            <div class="uk-width-medium-7-10">
+                                <ul id="tab-left-content" class="uk-switcher">
+                                    <li id="vPol">
+                                        Как известно, женщины намного осмотрительнее и осторожнее мужчин.
+                                        Зато мужчины значительно сильнее.</br>
+                                        Выбор героя мужского поля дает <b>+1 к силе</b> и <b>-1 к мудрости</b> героя.</br>
+                                        Выбор же героя женского пола дает <b>+1 к мудрости</b> и <b>-1 к силе</b> героя.
+                                    </li>
+                                    <li id="vRace">Hello again!</li>
+                                    <li id="vClass">Bazinga!</li>
+                                    <li id="vStats">You will never see me!</li>
+                                    <li id="vTuning">You will never see me!</li>
+                                </ul>
+-->
+                                <div uk-switcher uk-switcher-left data-uk-switcher="{connect:'#button-content'}">
+                                    <div class="uk-grid">
+                                        <div class="uk-width-1-1"><button class="uk-button uk-button-large"> Выбор пола героя </button></div>
+                                        <div class="uk-width-1-1"><br></div>
+                                        <div class="uk-width-1-1"><button class="uk-button uk-button-large"> Выбор расы героя </button></div>
+                                        <div class="uk-width-1-1"><br></div>
+                                        <div class="uk-width-1-1"><button class="uk-button uk-button-large">Выбор класса героя</button></div>
+                                        <div class="uk-width-1-1"><br></div>
+                                        <div class="uk-width-1-1"><button class="uk-button uk-button-large">Настройка статов героя</button></div>
+                                        <div class="uk-width-1-1"><br></div>
+                                        <div class="uk-width-1-1"><button class="uk-button uk-button-large">Тонкий тюнинг героя</button></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="uk-width-medium-7-10">
+                                <ul id="button-content" class="uk-switcher uk-margin">
+                                    <li id="vPol">
+                                        <div class="uk-grid">
+                                            <div class="uk-width-1-1">
+                                                Как известно, женщины намного осмотрительнее и осторожнее мужчин.
+                                                Зато мужчины значительно сильнее.</br>
+                                                Выбор героя мужского поля дает <b>+1 к силе</b> и <b>-1 к мудрости</b> героя.</br>
+                                                Выбор же героя женского пола дает <b>+1 к мудрости</b> и <b>-1 к силе</b> героя.
+                                                <br>
+                                                <p align="center">Выберите пол героя:</p>
+                                            </div>
+                                        </div>
+                                        <div class="uk-grid">
+                                            <div class="uk-width-1-2" align="center">
+                                                <button class="uk-button uk-button-large">Мужчина</button>
+                                            </div>
+                                            <div class="uk-width-1-2" align="center">
+                                                <button class="uk-button uk-button-large">Женщина</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li id="vRace">Hello again!</li>
+                                    <li id="vClass">Bazinga!</li>
+                                    <li id="vStats">You will never see me!</li>
+                                    <li id="vTuning">You will never see me!</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
