@@ -34,12 +34,9 @@ function genpers() {
 }
 
 function setSex(sex) {
-    alert("setSex");
     personage.sex = sex;
     var attr_bRace = $('#bRace').attr('class');
     var attr_bPol = $('#bPol').attr('class');
-    console.log('race = ' + attr_bRace);
-    console.log('Pol = ' + attr_bPol);
     $('#bRace').removeAttr('disabled');
     var tmpStr = attr_bPol.replace("uk-button-primary"," ");
     tmpStr += ' uk-button-success';
