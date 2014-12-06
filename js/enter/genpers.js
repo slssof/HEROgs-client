@@ -43,6 +43,7 @@ function setSex(sex) {
     $('#bPol').attr('class', tmpStr);
     tmpStr = attr_bRace + ' uk-button-primary';
     $('#bRace').attr('class', tmpStr);
+    pressbRace();
 
 
     // uk-button-success
@@ -61,4 +62,6 @@ function pressbRace() {
 
 function pressbPol() {
 //    $( "#dataBox" ).html(new EJS({url: '/tpl/enter/vPol.ejs'}).render());
+    //TODO Переделать на скакание по кнопкам, а не перегруз страницы
+    location = "http://herogs.sls/enter/genpers.html";
 }
