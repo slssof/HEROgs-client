@@ -4,17 +4,7 @@
     <meta charset="UTF-8">
     <title>uiKit Proba</title>
     <link rel="stylesheet" href="css/uikit.css" />
-    <script src="/js/jquery-2.1.1.min.js"></script>
-    <script src="js/uikit.min.js"></script>
-    <script src="/js/ejs.js"></script>
-    <script src="/js/hgs_func.js"></script>
-    <script src="/js/validator.min.js"></script>
-    <script src="/js/jsencrypt.min.js"></script>
-    <script src="https://cdn.socket.io/socket.io-1.0.6.js"></script>
-    <script src="/js/enter/genpers.js"></script>
-    <script src="js/components/slideshow.js"></script>
-    <script src="js/components/slideshow-fx.js"></script>
-    <script src="js/components/cover.js"></script>
+
 </head>
 <body>
 
@@ -72,7 +62,6 @@
                                             <ul class="uk-slideshow">
                                                 <li>
                                                     <img src="/img/races/human.jpg" alt="">
-
                                                     <div class="uk-caption uk-caption-bottom uk-caption-panel uk-animation-slide-bottom">
                                                         <div>
                                                             <h3>Человек</h3>
@@ -84,10 +73,9 @@
                                                 </li>
                                                 <li>
                                                     <img src="/img/races/s-elf.jpg" alt="">
-
                                                     <div class="uk-caption uk-caption-bottom uk-caption-panel uk-animation-slide-bottom">
                                                         <div>
-                                                            <h3>Светлый эльф</h3>
+                                                            <h3>Эльф</h3>
                                                             <p>Эльфы, несколько ниже и стройнее обычных людей. Хотя они и кажутся хрупкими
                                                                 и слабыми, представители этой расы проворны и сильны. Отличаются ксенофобией по отношению к другим расам.
                                                                 Эльфы имеют <b>+1 к Ловкости</b> и <b>-1 к Телосложению</b></p>
@@ -96,31 +84,72 @@
                                                     </div>
                                                 </li>
                                                 <li>
-                                                    <img src="/img/races/t-elf.jpg" alt="">
-
-                                                    <div class="uk-caption uk-caption-bottom uk-caption-panel uk-animation-slide-bottom">
-                                                        <div>
-                                                            <h3>Тёмный эльф</h3>
-                                                            <p>Дроу — подземная эльфийская раса.
-                                                                Дроу известны своей жестокостью и вероломством.
-                                                                Большинство дроу исповедует кровавый культ паучьей богини Ллос.
-                                                                Дроу имеют <b>+1 к Ловкости</b> и <b>-1 к Телосложению</b>, боевой модификатор
-                                                            <b>+1 к атаке ночью</b> и <b>-1 к атаке днём</b>.</p>
-                                                            <button class="uk-button uk-button-primary">Играть тёмным эльфом</button>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
                                                     <img src="/img/races/hobbit.jpg" alt="">
-
                                                     <div class="uk-caption uk-caption-bottom uk-caption-panel uk-animation-slide-bottom">
                                                         <div>
                                                             <h3>Хоббит</h3>
                                                             <p>Хоббиты — низкорослый народец, высотой в половину человеческого роста.
                                                                 Хоббиты славятся умением мгновенно исчезать и бесшумно передвигаться,
                                                                 меткостью в стрельбе из лука и во владении пращой.
-                                                                Дроу имеют <b>+1 к Ловкости</b> и <b>-1 к Силе</b>.</p>
+                                                                Хоббиты имеют <b>+1 к Ловкости</b> и <b>-1 к Силе</b>.</p>
                                                             <button class="uk-button uk-button-primary">Играть хоббитом</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <img src="/img/races/dwarv.jpg" alt="">
+                                                    <div class="uk-caption uk-caption-bottom uk-caption-panel uk-animation-slide-bottom">
+                                                        <div>
+                                                            <h3>Гном</h3>
+                                                            <p>Гномы — коренастый народ. Гномы малословны, их мало заботит юмор.
+                                                                Они сильные и выносливые бойцы, недолюбливают магию.
+                                                                Их главная любовь - гномья сталь, золото и мифрил.
+                                                                Они ценят самоцветы, особенно алмазы.
+                                                                Гномы недолюбливают эльфов, и люто ненавидят орков и гоблинов.
+                                                                Гномы имеют <b>+1 к Телосложению</b> и <b>-1 к Обаянию</b>.</p>
+                                                            <button class="uk-button uk-button-primary">Играть гномом</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <img src="/img/races/demon.jpg" alt="">
+                                                    <div class="uk-caption uk-caption-bottom uk-caption-panel uk-animation-slide-bottom">
+                                                        <div>
+                                                            <h3>Демон</h3>
+                                                            <p>Кто сильнее, тот и прав. Возможность совершить поступок является достаточным его оправданием.
+                                                                Покоряй и грабь слабых (не хочешь – не грабь), потакай себе во всём, покажи непонимающим истинную свободу.
+                                                                Власть должна принадлежать сильным. Главная ценность - личная свобода.
+                                                                Демон убивает просто потому, что может и хочет. В их обществе царит хаос и беспредел.
+                                                                Единственный общий принцип: слабый служит сильному.
+                                                                Демоны имеют <b>+1 к Обаянию</b> и <b>-1 к Мудрости</b>.</p>
+                                                            <button class="uk-button uk-button-primary">Играть демоном</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <img src="/img/races/lizard.jpg" alt="">
+                                                    <div class="uk-caption uk-caption-bottom uk-caption-panel uk-animation-slide-bottom">
+                                                        <div>
+                                                            <h3>Ящер</h3>
+                                                            <p>Ящеры – полурептилии, полулюди, живущие в религиозно-военизированном обществе.
+                                                                Идеалы чистоты, простоты и гармонии находят отражение в их магии, военном искусстве и философии.
+                                                                Они сторонятся других рас, концентрируясь на самосовершенствовании, мало мечтая о власти и завоеваниях.
+                                                                Ящеры имеют <b>+1 к Интеллекту</b> и <b>-1 к Обаянию</b>.</p>
+                                                            <button class="uk-button uk-button-primary">Играть ящером</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <img src="/img/races/orc.jpg" alt="">
+                                                    <div class="uk-caption uk-caption-bottom uk-caption-panel uk-animation-slide-bottom">
+                                                        <div>
+                                                            <h3>Орк</h3>
+                                                            <p>Война наполняет каждый миг жизни орка.
+                                                                Когда он не в набеге на своих врагов, орк тренируются, изготавливает и восстанавливает оружие, сгорает от нетерпения в ожидании сражения.
+                                                                Луки и другое стреляющие оружие орки презирают. Но любят устраивать засады. Орки ненавидят прямой солнечный свет и
+                                                                не соблюдают "правила войны".
+                                                                Орки имеют <b>+1 к атаке ночью</b> и <b>-1 к атаке днём</b>.</p>
+                                                            <button class="uk-button uk-button-primary">Играть ящером</button>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -128,6 +157,15 @@
                                             <a href="#" class="uk-slidenav uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
                                             <a href="#" class="uk-slidenav uk-slidenav-next" data-uk-slideshow-item="next"></a>
                                         </div>
+                                        <ul class="uk-dotnav uk-text-center">
+                                            <li data-uk-slideshow-item="0"><a href="#">Item 1</a></li>
+                                            <li data-uk-slideshow-item="1"><a href="#">Item 2</a></li>
+                                            <li data-uk-slideshow-item="2"><a href="#">Item 3</a></li>
+                                            <li data-uk-slideshow-item="3"><a href="#">Item 4</a></li>
+                                            <li data-uk-slideshow-item="4"><a href="#">Item 5</a></li>
+                                            <li data-uk-slideshow-item="5"><a href="#">Item 6</a></li>
+                                            <li data-uk-slideshow-item="6"><a href="#">Item 7</a></li>
+                                        </ul>
                                     </div>
 
                                 </div>
@@ -142,6 +180,17 @@
 </div>
 
 
-
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="js/uikit.min.js"></script>
+<script src="/js/ejs.js"></script>
+<script src="/js/hgs_func.js"></script>
+<script src="/js/validator.min.js"></script>
+<script src="/js/jsencrypt.min.js"></script>
+<script src="http://herogs.sls:5000/socket.io/socket.io.js"></script>
+<script src="/js/enter/genpers.js"></script>
+<script src="js/components/slideshow.js"></script>
+<script src="js/components/slideshow-fx.js"></script>
+<script src="js/components/cover.js"></script>
 </body>
 </html>
+

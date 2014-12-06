@@ -111,7 +111,6 @@ function login() {
     loginData.login = encrypt.encrypt($("#inputLoginEnter").val());
     loginData.password = encrypt.encrypt($("#inputPasswordEnter").val());
     var validate = 1; //validator.matches(loginData.login, /^[0-9A-Za-zА-Яа-яЁё\s!@#$()+.=]+$/) * validator.matches(loginData.password, /^[0-9A-Za-zА-Яа-яЁё\s!@#$()+.=_]+$/);
-    alert("validate login = " + validate);
     if(validate) {
         socket.emit('login', loginData);
     }
