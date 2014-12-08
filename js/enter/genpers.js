@@ -60,6 +60,18 @@ function pressbRace() {
 
 }
 
+function pressbPodRace(race) {
+    personage.race = race;
+    $('#vRace').removeAttr('class');
+    $('#vRace').attr('class', 'uk-hidden');
+    if (race == 0) {
+        $('#vPodRaceHuman').removeAttr('class');
+        $('#vPodRaceHuman').attr('class', 'uk-display-block');
+    }
+
+
+}
+
 function pressbPol() {
 //    $( "#dataBox" ).html(new EJS({url: '/tpl/enter/vPol.ejs'}).render());
     //TODO Переделать на скакание по кнопкам, а не перегруз страницы

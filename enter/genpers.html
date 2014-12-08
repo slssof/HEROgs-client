@@ -35,7 +35,7 @@
                             </div>
 
                             <div id="dataBox" class="uk-width-medium-7-10">
-
+<!-- Выбор пола игрока-->
                                 <div id="vPol" class="uk-display-block">
                                     <div class="uk-grid">
                                         <div class="uk-width-1-1">
@@ -58,9 +58,9 @@
                                         </div>
                                     </div>
                                 </div>
+<!-- Конец выбора пола игрока -->
+<!-- выбор расы игрока -->
                                 <div id="vRace" class="uk-invisible">
-
-
                                     <div class="uk-margin" data-uk-slideshow>
                                         <div class="uk-slidenav-position">
                                             <ul class="uk-slideshow">
@@ -71,7 +71,7 @@
                                                             <h3>Человек</h3>
                                                             <p>Герой - человек не имеет физических модификаторов.<br> <b>Под началом героя-человека в армии спокойно уживаются существа
                                                             различных раc без штрафов морали</b></p>
-                                                            <button class="uk-button uk-button-primary">Играть человеком</button>
+                                                            <button class="uk-button uk-button-primary" onclick="pressbPodRace(0)">Играть человеком</button>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -171,9 +171,48 @@
                                             <li data-uk-slideshow-item="6"><a href="#">Item 7</a></li>
                                         </ul>
                                     </div>
-
                                 </div>
+<!-- Конец выбора расы игрока -->
+<!-- Выбор подрасы игрока -->
+<div id="vPodRaceHuman" class="uk-invisible">
+    <div class="uk-margin" data-uk-slideshow>
+        <div class="uk-slidenav-position">
+            <ul class="uk-slideshow">
+                <li>
+                    <img src="/img/races/subRace/humanCimmer.jpg" alt="">
+                    <div class="uk-caption uk-caption-bottom uk-caption-panel uk-animation-slide-bottom">
+                        <div>
+                            <h3>Киммериец</h3>
+                            <p>Герой - человек не имеет физических модификаторов.<br> <b>Под началом героя-человека в армии спокойно уживаются существа
+                                различных раc без штрафов морали</b></p>
+                            <button class="uk-button uk-button-primary">Играть киммерийцем</button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="/img/races/subRace/humanAqilon.jpg" alt="">
+                    <div class="uk-caption uk-caption-bottom uk-caption-panel uk-animation-slide-bottom">
+                        <div>
+                            <h3>Аквилонец</h3>
+                            <p>Эльфы, несколько ниже и стройнее обычных людей. Хотя они и кажутся хрупкими
+                                и слабыми, представители этой расы проворны и сильны. Отличаются ксенофобией по отношению к другим расам.
+                                Эльфы имеют <b>+1 к Ловкости</b> и <b>-1 к Телосложению</b></p>
+                            <button class="uk-button uk-button-primary">Играть аквилонцем</button>
+                        </div>
+                    </div>
+                </li>
 
+            </ul>
+            <a href="#" class="uk-slidenav uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+            <a href="#" class="uk-slidenav uk-slidenav-next" data-uk-slideshow-item="next"></a>
+        </div>
+        <ul class="uk-dotnav uk-text-center">
+            <li data-uk-slideshow-item="0"><a href="#">Item 1</a></li>
+
+        </ul>
+    </div>
+</div>
+<!-- Конец выбора расы игрока -->
                             </div>
                         </div>
                     </div>
