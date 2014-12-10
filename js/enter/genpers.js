@@ -82,6 +82,11 @@ function pressbPodRace(race) {
 function viewPodRace(podRace) {
     if (podRace == 10) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceHumanAqilon.ejs'}).render());
     if (podRace == 11) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceHumanSlavia.ejs'}).render());
+    if (podRace == 12) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceHumanCimmeria.ejs'}).render());
+    if (podRace == 13) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceHumanChina.ejs'}).render());
+    if (podRace == 14) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceHumanTuran.ejs'}).render());
+    if (podRace == 15) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceHumanVendia.ejs'}).render());
+    if (podRace == 16) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceHumanStigia.ejs'}).render());
 
 }
 
