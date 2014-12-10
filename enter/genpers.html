@@ -19,11 +19,11 @@
                             <div class="uk-width-medium-3-10">
                                 <div uk-switcher data-uk-switcher="{connect:'#button-content'}">
                                     <div class="uk-grid">
-                                        <div class="uk-width-1-1"><button id="bPol"  class="uk-button uk-button-large uk-button-primary" onclick = "pressbPol();"> Выбор пола героя </button></div>
+                                        <div class="uk-width-1-1"><button id="bPol"  class="uk-button uk-button-large uk-button-primary" onclick = "vSex();"> Выбор пола героя </button></div>
                                         <div class="uk-width-1-1"><br></div>
                                         <div class="uk-width-1-1"><button id="bRace"  class="uk-button uk-button-large" disabled onclick = "pressbRace();"> Выбор расы героя </button></div>
                                         <div class="uk-width-1-1"><br></div>
-                                        <div class="uk-width-1-1"><button id="bClass" class="uk-button uk-button-large" disabled >Выбор подрасы героя</button></div>
+                                        <div class="uk-width-1-1"><button id="bPodRace" class="uk-button uk-button-large" disabled >Выбор подрасы героя</button></div>
                                         <div class="uk-width-1-1"><br></div>
                                         <div class="uk-width-1-1"><button id="bClass" class="uk-button uk-button-large" disabled >Выбор класса героя</button></div>
                                         <div class="uk-width-1-1"><br></div>
@@ -59,121 +59,8 @@
                                     </div>
                                 </div>
 <!-- Конец выбора пола игрока -->
-<!-- выбор расы игрока -->
-                                <div id="vRace" class="uk-invisible">
-                                    <div class="uk-margin" data-uk-slideshow>
-                                        <div class="uk-slidenav-position">
-                                            <ul class="uk-slideshow">
-                                                <li>
-                                                    <img src="/img/races/human.jpg" alt="">
-                                                    <div class="uk-caption uk-caption-bottom uk-caption-panel uk-animation-slide-bottom">
-                                                        <div>
-                                                            <h3>Человек</h3>
-                                                            <p>Герой - человек не имеет физических модификаторов.<br> <b>Под началом героя-человека в армии спокойно уживаются существа
-                                                            различных раc без штрафов морали</b></p>
-                                                            <button class="uk-button uk-button-primary" onclick="pressbPodRace(0)">Играть человеком</button>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <img src="/img/races/s-elf.jpg" alt="">
-                                                    <div class="uk-caption uk-caption-bottom uk-caption-panel uk-animation-slide-bottom">
-                                                        <div>
-                                                            <h3>Эльф</h3>
-                                                            <p>Эльфы, несколько ниже и стройнее обычных людей. Хотя они и кажутся хрупкими
-                                                                и слабыми, представители этой расы проворны и сильны. Отличаются ксенофобией по отношению к другим расам.
-                                                                Эльфы имеют <b>+1 к Ловкости</b> и <b>-1 к Телосложению</b></p>
-                                                            <button class="uk-button uk-button-primary">Играть светлым эльфом</button>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <img src="/img/races/hobbit.jpg" alt="">
-                                                    <div class="uk-caption uk-caption-bottom uk-caption-panel uk-animation-slide-bottom">
-                                                        <div>
-                                                            <h3>Хоббит</h3>
-                                                            <p>Хоббиты — низкорослый народец, высотой в половину человеческого роста.
-                                                                Хоббиты славятся умением мгновенно исчезать и бесшумно передвигаться,
-                                                                меткостью в стрельбе из лука и во владении пращой.
-                                                                Хоббиты имеют <b>+1 к Ловкости</b> и <b>-1 к Силе</b>.</p>
-                                                            <button class="uk-button uk-button-primary">Играть хоббитом</button>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <img src="/img/races/dwarv.jpg" alt="">
-                                                    <div class="uk-caption uk-caption-bottom uk-caption-panel uk-animation-slide-bottom">
-                                                        <div>
-                                                            <h3>Гном</h3>
-                                                            <p>Гномы — коренастый народ. Гномы малословны, их мало заботит юмор.
-                                                                Они сильные и выносливые бойцы, недолюбливают магию.
-                                                                Их главная любовь - гномья сталь, золото и мифрил.
-                                                                Они ценят самоцветы, особенно алмазы.
-                                                                Гномы недолюбливают эльфов, и люто ненавидят орков и гоблинов.
-                                                                Гномы имеют <b>+1 к Телосложению</b> и <b>-1 к Обаянию</b>.</p>
-                                                            <button class="uk-button uk-button-primary">Играть гномом</button>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <img src="/img/races/demon.jpg" alt="">
-                                                    <div class="uk-caption uk-caption-bottom uk-caption-panel uk-animation-slide-bottom">
-                                                        <div>
-                                                            <h3>Демон</h3>
-                                                            <p>Кто сильнее, тот и прав. Возможность совершить поступок является достаточным его оправданием.
-                                                                Покоряй и грабь слабых (не хочешь – не грабь), потакай себе во всём, покажи непонимающим истинную свободу.
-                                                                Власть должна принадлежать сильным. Главная ценность - личная свобода.
-                                                                Демон убивает просто потому, что может и хочет. В их обществе царит хаос и беспредел.
-                                                                Единственный общий принцип: слабый служит сильному.
-                                                                Демоны имеют <b>+1 к Обаянию</b> и <b>-1 к Мудрости</b>.</p>
-                                                            <button class="uk-button uk-button-primary">Играть демоном</button>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <img src="/img/races/lizard.jpg" alt="">
-                                                    <div class="uk-caption uk-caption-bottom uk-caption-panel uk-animation-slide-bottom">
-                                                        <div>
-                                                            <h3>Ящер</h3>
-                                                            <p>Ящеры – полурептилии, полулюди, живущие в религиозно-военизированном обществе.
-                                                                Идеалы чистоты, простоты и гармонии находят отражение в их магии, военном искусстве и философии.
-                                                                Они сторонятся других рас, концентрируясь на самосовершенствовании, мало мечтая о власти и завоеваниях.
-                                                                Ящеры имеют <b>+1 к Интеллекту</b> и <b>-1 к Обаянию</b>.</p>
-                                                            <button class="uk-button uk-button-primary">Играть ящером</button>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <img src="/img/races/orc.jpg" alt="">
-                                                    <div class="uk-caption uk-caption-bottom uk-caption-panel uk-animation-slide-bottom">
-                                                        <div>
-                                                            <h3>Орк</h3>
-                                                            <p>Война наполняет каждый миг жизни орка.
-                                                                Когда он не в набеге на своих врагов, орк тренируются, изготавливает и восстанавливает оружие, сгорает от нетерпения в ожидании сражения.
-                                                                Луки и другое стреляющие оружие орки презирают. Но любят устраивать засады. Орки ненавидят прямой солнечный свет и
-                                                                не соблюдают "правила войны".
-                                                                Орки имеют <b>+1 к атаке ночью</b> и <b>-1 к атаке днём</b>.</p>
-                                                            <button class="uk-button uk-button-primary">Играть орком</button>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <a href="#" class="uk-slidenav uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
-                                            <a href="#" class="uk-slidenav uk-slidenav-next" data-uk-slideshow-item="next"></a>
-                                        </div>
-                                        <ul class="uk-dotnav uk-text-center">
-                                            <li data-uk-slideshow-item="0"><a href="#">Item 1</a></li>
-                                            <li data-uk-slideshow-item="1"><a href="#">Item 2</a></li>
-                                            <li data-uk-slideshow-item="2"><a href="#">Item 3</a></li>
-                                            <li data-uk-slideshow-item="3"><a href="#">Item 4</a></li>
-                                            <li data-uk-slideshow-item="4"><a href="#">Item 5</a></li>
-                                            <li data-uk-slideshow-item="5"><a href="#">Item 6</a></li>
-                                            <li data-uk-slideshow-item="6"><a href="#">Item 7</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-<!-- Конец выбора расы игрока -->
 <!-- Выбор подрасы игрока -->
+<!-- Люди -->
 <div id="vPodRaceHuman" class="uk-invisible">
     <div class="uk-margin" data-uk-slideshow>
         <div class="uk-slidenav-position">
@@ -277,7 +164,114 @@
         </ul>
     </div>
 </div>
-<!-- Конец выбора расы игрока -->
+<!-- Конец выбора людей -->
+<!-- Эльфы -->
+<div id="vPodRaceElf" class="uk-invisible">
+    <div class="uk-margin" data-uk-slideshow>
+        <div class="uk-slidenav-position">
+            <ul class="uk-slideshow">
+                <li>
+                    <img src="/img/races/subRace/humanAqilon.jpg" alt="">
+                    <div class="uk-caption uk-caption-bottom uk-caption-panel uk-animation-slide-bottom">
+                        <div>
+                            <h3>Аквилон</h3>
+                            <p>Эльфы, несколько ниже и стройнее обычных людей. Хотя они и кажутся хрупкими
+                                и слабыми, представители этой расы проворны и сильны. Отличаются ксенофобией по отношению к другим расам.
+                                Эльфы имеют <b>+1 к Ловкости</b> и <b>-1 к Телосложению</b></p>
+                            <button class="uk-button uk-button-primary">Выбрать</button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="/img/races/subRace/humanSlavia.jpg" alt="">
+                    <div class="uk-caption uk-caption-bottom uk-caption-panel uk-animation-slide-bottom">
+                        <div>
+                            <h3>Славия</h3>
+                            <p>Эльфы, несколько ниже и стройнее обычных людей. Хотя они и кажутся хрупкими
+                                и слабыми, представители этой расы проворны и сильны. Отличаются ксенофобией по отношению к другим расам.
+                                Эльфы имеют <b>+1 к Ловкости</b> и <b>-1 к Телосложению</b></p>
+                            <!--                            <button class="uk-button uk-button-primary">Выбрать</button> -->
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="/img/races/subRace/humanCimmer.jpg" alt="">
+                    <div class="uk-caption uk-caption-bottom uk-caption-panel uk-animation-slide-bottom">
+                        <div>
+                            <h3>Киммерия</h3>
+                            <p>Герой - человек не имеет физических модификаторов.<br> <b>Под началом героя-человека в армии спокойно уживаются существа
+                                различных раc без штрафов морали</b></p>
+                            <!--                            <button class="uk-button uk-button-primary">Выбрать</button> -->
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="/img/races/subRace/humanChina.jpg" alt="">
+                    <div class="uk-caption uk-caption-bottom uk-caption-panel uk-animation-slide-bottom">
+                        <div>
+                            <h3>Кхитай</h3>
+                            <p>Эльфы, несколько ниже и стройнее обычных людей. Хотя они и кажутся хрупкими
+                                и слабыми, представители этой расы проворны и сильны. Отличаются ксенофобией по отношению к другим расам.
+                                Эльфы имеют <b>+1 к Ловкости</b> и <b>-1 к Телосложению</b></p>
+                            <!--                            <button class="uk-button uk-button-primary">Выбрать</button> -->
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="/img/races/subRace/humanTuran.jpg" alt="">
+                    <div class="uk-caption uk-caption-bottom uk-caption-panel uk-animation-slide-bottom">
+                        <div>
+                            <h3>Туран</h3>
+                            <p>Эльфы, несколько ниже и стройнее обычных людей. Хотя они и кажутся хрупкими
+                                и слабыми, представители этой расы проворны и сильны. Отличаются ксенофобией по отношению к другим расам.
+                                Эльфы имеют <b>+1 к Ловкости</b> и <b>-1 к Телосложению</b></p>
+                            <!--                            <button class="uk-button uk-button-primary">Выбрать</button> -->
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="/img/races/subRace/humanVendia.jpg" alt="">
+                    <div class="uk-caption uk-caption-bottom uk-caption-panel uk-animation-slide-bottom">
+                        <div>
+                            <h3>Вендия</h3>
+                            <p>Эльфы, несколько ниже и стройнее обычных людей. Хотя они и кажутся хрупкими
+                                и слабыми, представители этой расы проворны и сильны. Отличаются ксенофобией по отношению к другим расам.
+                                Эльфы имеют <b>+1 к Ловкости</b> и <b>-1 к Телосложению</b></p>
+                            <!--                            <button class="uk-button uk-button-primary">Выбрать</button> -->
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="/img/races/subRace/humanStigia.jpg" alt="">
+                    <div class="uk-caption uk-caption-bottom uk-caption-panel uk-animation-slide-bottom">
+                        <div>
+                            <h3>Стигия</h3>
+                            <p>Эльфы, несколько ниже и стройнее обычных людей. Хотя они и кажутся хрупкими
+                                и слабыми, представители этой расы проворны и сильны. Отличаются ксенофобией по отношению к другим расам.
+                                Эльфы имеют <b>+1 к Ловкости</b> и <b>-1 к Телосложению</b></p>
+                            <!--                            <button class="uk-button uk-button-primary">Выбрать</button> -->
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <a href="#" class="uk-slidenav uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+            <a href="#" class="uk-slidenav uk-slidenav-next" data-uk-slideshow-item="next"></a>
+        </div>
+        <ul class="uk-dotnav uk-text-center">
+            <li data-uk-slideshow-item="0"><a href="#">Item 1</a></li>
+            <li data-uk-slideshow-item="1"><a href="#">Item 2</a></li>
+            <li data-uk-slideshow-item="2"><a href="#">Item 3</a></li>
+            <li data-uk-slideshow-item="3"><a href="#">Item 4</a></li>
+            <li data-uk-slideshow-item="4"><a href="#">Item 5</a></li>
+            <li data-uk-slideshow-item="5"><a href="#">Item 6</a></li>
+            <li data-uk-slideshow-item="6"><a href="#">Item 7</a></li>
+
+        </ul>
+    </div>
+</div>
+<!-- Конец выбора Эльфов -->
+
+<!-- Конец выбора подрасы игрока -->
                             </div>
                         </div>
                     </div>
