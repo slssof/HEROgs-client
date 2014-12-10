@@ -75,7 +75,10 @@ function pressbPodRace(race) {
         $("#dataBox").html(new EJS({url: '/tpl/enter/vPodraceHumanBox.ejs'}).render());
         viewPodRace(10);
     }
-    if (race == 1) $( "#dataBox" ).html(new EJS({url: '/tpl/enter/vPodraceElfBox.ejs'}).render());
+    if (race == 1) {
+        $("#dataBox").html(new EJS({url: '/tpl/enter/vPodraceElfBox.ejs'}).render());
+        viewPodRace(20);
+    }
     viewPodRace(race);
 }
 
@@ -87,6 +90,14 @@ function viewPodRace(podRace) {
     if (podRace == 14) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceHumanTuran.ejs'}).render());
     if (podRace == 15) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceHumanVendia.ejs'}).render());
     if (podRace == 16) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceHumanStigia.ejs'}).render());
+
+    if (podRace == 20) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceElfSe.ejs'}).render());
+    if (podRace == 21) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceElfTe.ejs'}).render());
+    if (podRace == 22) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceElfLes.ejs'}).render());
+    if (podRace == 23) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceHumanChina.ejs'}).render());
+    if (podRace == 24) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceHumanTuran.ejs'}).render());
+    if (podRace == 25) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceHumanVendia.ejs'}).render());
+    if (podRace == 26) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceHumanStigia.ejs'}).render());
 
 }
 
