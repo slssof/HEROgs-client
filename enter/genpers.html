@@ -21,9 +21,9 @@
                                     <div class="uk-grid">
                                         <div class="uk-width-1-1"><button id="bPol"  class="uk-button uk-button-large uk-button-primary" onclick = "vSex();"> Выбор пола героя </button></div>
                                         <div class="uk-width-1-1"><br></div>
-                                        <div class="uk-width-1-1"><button id="bRace"  class="uk-button uk-button-large" disabled onclick = "pressbRace();"> Выбор расы героя </button></div>
+                                        <div class="uk-width-1-1"><button id="bRace"  class="uk-button uk-button-large" disabled onclick = "pressbRace(0);"> Выбор расы героя </button></div>
                                         <div class="uk-width-1-1"><br></div>
-                                        <div class="uk-width-1-1"><button id="bPodRace" class="uk-button uk-button-large" disabled >Выбор подрасы героя</button></div>
+                                        <div class="uk-width-1-1"><button id="bPodRace" class="uk-button uk-button-large" disabled onclick = "pressbPodRace(0);">Выбор подрасы героя</button></div>
                                         <div class="uk-width-1-1"><br></div>
                                         <div class="uk-width-1-1"><button id="bClass" class="uk-button uk-button-large" disabled >Выбор класса героя</button></div>
                                         <div class="uk-width-1-1"><br></div>
@@ -36,28 +36,6 @@
 
                             <div id="dataBox" class="uk-width-medium-7-10">
 <!-- Выбор пола игрока-->
-                                <div id="vPol" class="uk-display-block">
-                                    <div class="uk-grid">
-                                        <div class="uk-width-1-1">
-                                            Как известно, женщины намного осмотрительнее и осторожнее мужчин.
-                                            Зато мужчины значительно сильнее.</br>
-                                            Выбор героя мужского поля дает <b>+1 к силе</b> и <b>-1 к мудрости</b> героя.</br>
-                                            Выбор же героя женского пола дает <b>+1 к мудрости</b> и <b>-1 к силе</b> героя.
-                                            <br>
-                                            <p align="center">Выберите пол героя:</p>
-                                        </div>
-                                    </div>
-                                    <div class="uk-grid">
-                                        <div class="uk-width-1-1" align="center">
-                                            <a src="#" onclick="setSex(1);"><img src="/img/races/mans.jpg"></a>
-                                        </div>
-                                    </div>
-                                    <div class="uk-grid">
-                                        <div class="uk-width-1-1" align="center">
-                                            <a src="#" onclick="setSex(0);"><img src="/img/races/womans.jpg"></a>
-                                        </div>
-                                    </div>
-                                </div>
 <!-- Конец выбора пола игрока -->
 <!-- Выбор подрасы игрока -->
 <!-- Люди -->

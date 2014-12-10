@@ -67,31 +67,36 @@ function viewRace(race) {
 }
 
 function pressbPodRace(race) {
+    setButtonAct('#bPodRace');
+    setButtonUnPrim('#bRace');
+    setButtonPrim('#bPodRace');
+    personage.race = race;
+    if (race == 0) {
+        $("#dataBox").html(new EJS({url: '/tpl/enter/vPodraceHumanBox.ejs'}).render());
+        viewPodRace(10);
+    }
+    if (race == 1) $( "#dataBox" ).html(new EJS({url: '/tpl/enter/vPodraceElfBox.ejs'}).render());
+    viewPodRace(race);
+}
+
+function viewPodRace(podRace) {
+    if (podRace == 10) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceHumanAqilon.ejs'}).render());
+    if (podRace == 11) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceHumanSlavia.ejs'}).render());
+
+}
+
+
+
+function pressbclass(pclass) {
 
     setButtonAct('#bPodRace');
     setButtonUnPrim('#bRace');
     setButtonPrim('#bPodRace');
-/*
-    var attr_bPodRace = $('#bPodRace').attr('class');
-    var attr_bRace = $('#bPodRace').attr('class');
-    $('#bPodRace').removeAttr('disabled');
-    var tmpStr = attr_bRace.replace("uk-button-primary"," ");
-//    tmpStr += ' uk-button-success';
-    $('#bRace').attr('class', tmpStr);
-    tmpStr = attr_bPodRace + ' uk-button-primary';
-    $('#bPodRace').attr('class', tmpStr);
-    console.log($('#bPodRace').attr('class'));
-*/
-    personage.race = race;
-    hiddenAll()
-    if (race == 0) {
-        $('#vPodRaceHuman').removeAttr('class');
-        $('#vPodRaceHuman').attr('class', 'uk-display-block');
-    }
-    if (race == 1) {
-        $('#vPodRaceElf').removeAttr('class');
-        $('#vPodRaceElf').attr('class', 'uk-display-block');
-    }
+
+    personage.class = pclass;
+
+    $( "#dataBox" ).html(new EJS({url: '/tpl/enter/vPodraceHumanBox.ejs'}).render());
+    if (race == 0) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceHumanAqilon.ejs'}).render());
 
 
 }
