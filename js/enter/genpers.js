@@ -96,8 +96,8 @@ function viewPodRace(podRace) {
     if (podRace == 22) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceElfLes.ejs'}).render());
     if (podRace == 23) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceElfLun.ejs'}).render());
     if (podRace == 24) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceElfSer.ejs'}).render());
-    if (podRace == 25) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceHumanVendia.ejs'}).render());
-    if (podRace == 26) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceHumanStigia.ejs'}).render());
+    if (podRace == 25) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceElfSea.ejs'}).render());
+    if (podRace == 26) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceElfWing.ejs'}).render());
 
 }
 
