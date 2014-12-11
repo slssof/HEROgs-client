@@ -79,6 +79,10 @@ function pressbPodRace(race) {
         $("#dataBox").html(new EJS({url: '/tpl/enter/vPodraceElfBox.ejs'}).render());
         viewPodRace(20);
     }
+    if (race == 2) {
+        $("#dataBox").html(new EJS({url: '/tpl/enter/vPodraceHobbitBox.ejs'}).render());
+        viewPodRace(30);
+    }
     viewPodRace(race);
 }
 
@@ -98,6 +102,10 @@ function viewPodRace(podRace) {
     if (podRace == 24) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceElfSer.ejs'}).render());
     if (podRace == 25) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceElfSea.ejs'}).render());
     if (podRace == 26) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceElfWing.ejs'}).render());
+
+    if (podRace == 30) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceHobbitRiver.ejs'}).render());
+    if (podRace == 31) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceHobbitHill.ejs'}).render());
+    if (podRace == 32) $( "#vPodrace" ).html(new EJS({url: '/tpl/enter/vPodraceHobbitWood.ejs'}).render());
 
 }
 
